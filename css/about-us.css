@@ -87,20 +87,12 @@
   justify-content: space-between;
 }
 
-/* ================================
-   TITLE
-================================ */
-
 .about-hero-left h1{
   font-size: 56px;
   font-weight: 700;
   letter-spacing: 0.5px;
   margin: 0;
 }
-
-/* ================================
-   BREADCRUMB (RIGHT SIDE)
-================================ */
 
 .about-hero-right{
   font-size: 15px;
@@ -122,9 +114,6 @@
   font-weight: 600;
 }
 
-/* ================================
-   DECORATIVE CURVE 
-================================ */
 
 .about-hero::after{
   content:"";
@@ -137,7 +126,7 @@
   background: radial-gradient(circle, rgba(20,198,209,0.18), transparent 70%);
 }
 
-/* About */
+/* About Section Start*/
 .about {
   padding: 80px 0;
 }
@@ -199,20 +188,18 @@
   width: 100%;
   border-radius: 15px;
 }
-/* =========================================
-   ABOUT SECTION — FIGMA LIGHT VERSION
-========================================= */
 
+/*About Section Start*/
 .about {
   position: relative;
   background: #ffffff; 
   overflow: hidden;
 }
 
-/* container */
+
 .container {
   width: 1200px;
-  margin: auto;
+  margin: 0 auto;
 }
 
 /* layout */
@@ -224,10 +211,6 @@
   z-index: 2;
 }
 
-/* =========================================
-   SVG BACKGROUND (dots)
-========================================= */
-
 .about-bg {
   position: absolute;
   left: -120px;
@@ -238,9 +221,6 @@
   pointer-events: none;
 }
 
-/* =========================================
-   IMAGE COLLAGE
-========================================= */
 
 .about-gallery {
   display: flex;
@@ -308,9 +288,6 @@
 }
 
 /* video */
-/* ===============================
-   VIDEO THUMB
-=============================== */
 
 .feature-video {
   position: relative;
@@ -327,9 +304,7 @@
   border-radius: 16px;
 }
 
-/* ===============================
-   PLAY BUTTON (IMAGE ICON)
-=============================== */
+
 
 .play-btn {
   position: absolute;
@@ -353,7 +328,6 @@
   transition: 0.25s ease;
 }
 
-/* icon size */
 .play-btn img {
   width: 68px;
   height: 68px;
@@ -366,9 +340,7 @@
   box-shadow: 0 14px 30px rgba(0, 0, 0, 0.25);
 }
 
-/* ======================================
-   CHECKLIST
-====================================== */
+/*CHECKLIST*/
 .about-list {
   list-style: none;
   padding: 0;
@@ -390,12 +362,10 @@
   top: 5px;
   width: 18px;
   height: 18px;
-  background: url("../assesst/checkmark-circle-01.png") no-repeat center/contain;
+  /* background: url("../assesst/checkmark-circle-01.png") no-repeat center/contain; */
 }
 
-/* ======================================
-   ACTIONS ROW
-====================================== */
+/* ACTIONS ROW  */
 
 .about-actions {
   display: flex;
@@ -403,9 +373,7 @@
   gap: 30px;
 }
 
-/* ======================================
-   PRIMARY BUTTON (FIGMA EXACT)
-====================================== */
+/* primary btn */
 
 .btn-primary {
   display: inline-flex;
@@ -452,7 +420,7 @@
 
 /* hover */
 .btn-primary:hover {
-  transform: translateY(-2px);
+  /* transform: translateY(-2px); */
   box-shadow: 0 14px 30px rgba(20, 198, 209, 0.35);
   background: #0fa9b3;
 }
@@ -492,16 +460,15 @@
   color: #0b1b4a;
   font-weight: 700;
 }
-/* =====================================
-   STATS SECTION 
-===================================== */
+/*STATS SECTION 
+ */
 
 .stats {
   padding: 260px 0 140px;
   color: #fff;
   position: relative;
   overflow: visible;
-  background: url("../assesst/stats-image.png") center/cover no-repeat;
+  background: url("../images/home-img/stats-bg.png") center/cover no-repeat;
   z-index: 1;
 }
 
@@ -512,9 +479,7 @@
   text-align: center;
 }
 
-/* =====================================
-   title
-===================================== */
+/*title*/
 
 .stats-title {
   font-size: 40px;
@@ -527,9 +492,7 @@
   height: auto;
 }
 
-/* =====================================
-   grid
-===================================== */
+/*grid */
 
 .stats-grid {
   display: grid;
@@ -573,9 +536,7 @@
   font-size: 15px;
   opacity: 0.85;
 }
-/* ======================================
-   CHOOSE SECTION
-====================================== */
+/* CHOOSE SECTION*/
 
 .choose {
   background: #f4f7fa;
@@ -583,9 +544,7 @@
   z-index: 3;
 }
 
-/* ======================================
-   MAIN WRAP
-====================================== */
+/* MAIN WRAP */
 
 .choose-wrap {
   max-width: 1280px;
@@ -595,9 +554,7 @@
   align-items: center;
 }
 
-/* ======================================
-   LEFT BIG CARD
-====================================== */
+/*LEFT BIG CARD*/
 
 .choose-card {
   background: #f2fbfd;
@@ -627,9 +584,7 @@
   margin: 26px 0 55px;
 }
 
-/* ======================================
-   STEPS LIST
-====================================== */
+/* STEPS LIST */
 
 .choose-list {
   list-style: none;
@@ -680,9 +635,7 @@
   line-height: 1.6;
 }
 
-/* ======================================
-   RIGHT IMAGE
-====================================== */
+/*RIGHT IMAGE */
 
 .choose-img {
   position: relative;
@@ -694,9 +647,7 @@
   border-radius: 52px;
 }
 
-/* ======================================
-   EXPERIENCE SECTION
-====================================== */
+/*EXPERIENCE SECTION */
 
 .experience {
   width: 1280px;
@@ -729,9 +680,7 @@
   max-width: 520px;
   line-height: 1.7;
 }
-/* =====================================
-   TEAM SECTION
-===================================== */
+/*TEAM SECTION*/
 
 .team {
   background: #f4f7fa;
@@ -745,9 +694,7 @@
   text-align: center;
 }
 
-/* =====================================
-   TAG
-===================================== */
+/*TAG */
 
 .team-tag {
   display: inline-block;
@@ -762,9 +709,7 @@
   margin-bottom: 20px;
 }
 
-/* =====================================
-   TITLE
-===================================== */
+/* TITLE*/
 
 .team-title {
   font-size: 38px;
@@ -782,9 +727,7 @@
   color: #6b7b8f;
 }
 
-/* =====================================
-   CARDS ROW
-===================================== */
+/*CARDS ROW */
 
 .team-row {
   position: relative;
@@ -795,9 +738,7 @@
   align-items: center;
 }
 
-/* =====================================
-   CARD
-===================================== */
+/*CARD */
 
 .team-card {
   position: relative;
@@ -815,9 +756,7 @@
   box-shadow: 0 15px 40px rgba(0, 0, 0, 0.05);
 }
 
-/* =====================================
-   NAME BADGE (floating bottom like figma)
-===================================== */
+/* NAME BADGE  */
 
 .team-info {
   position: absolute;
@@ -848,9 +787,7 @@
   color: #6b7b8f;
 }
 
-/* =====================================
-   RIGHT ARROW BUTTON
-===================================== */
+/* RIGHT ARROW BUTTON */
 
 .team-next {
   position: absolute;
@@ -876,9 +813,7 @@
   transform: scale(1.08);
 }
 
-/* =====================================
-   DOTS
-===================================== */
+/* DOTS */
 
 .team-dots {
   margin-top: 80px;
@@ -899,9 +834,7 @@
   border-radius: 20px;
   background: #0b1a45;
 }
-/* =========================
-   TESTIMONIAL SECTION
-========================= */
+/*TESTIMONIAL SECTION */
 
 .testimonial {
   background: #f4f7fa;
@@ -914,9 +847,7 @@
   margin: auto;
 }
 
-/* =========================
-   HEADER
-========================= */
+/*HEADER*/
 
 .testimonial-head {
   display: grid;
@@ -960,7 +891,7 @@
   gap: 14px;
 }
 
-/* "Average Rating" */
+/* Average Rating */
 .rating-label {
   font-size: 14px;
   font-weight: 500;
@@ -992,9 +923,7 @@
 }
 
 
-/* =========================
-   BODY
-========================= */
+/*BODY */
 
 .testimonial-body {
   display: grid;
@@ -1035,9 +964,7 @@
   font-size: 32px;
 }
 
-/* =========================
-   TEXT
-========================= */
+/*TEXT */
 
 .testimonial-text {
   width: 608px;
@@ -1058,9 +985,7 @@
   color: #00b4d8;
 }
 
-/* =========================
-   STARS
-========================= */
+/* STARS */
 
 .stars {
   display: flex;
@@ -1072,8 +997,9 @@
   height: 18px;
   fill: #14c6d1;
 }
+/*Media Queries*/
 
-@media (max-width:1200px){
+@media  (max-width:1200px){
 
   .about-wrapper{
     gap: 60px;
