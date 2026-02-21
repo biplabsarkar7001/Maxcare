@@ -1,19 +1,14 @@
 @import url("https://fonts.googleapis.com/css2?family=Castoro+Titling&family=DM+Sans:wght@300;400;500;600;700&display=swap");
-
 :root {
   --bg-dark: #0b2a53;
   --bg-black: #000;
-
   --primary-color: #1aa4b7; 
   --accent-red: #e63946;
-
   --golden-color: #6a4f2c;
   --maroon-color: #631015;
-
   --text-dark: #222;
   --text-light: #fff;
-
-  --section-padding: 120px;
+  /* --section-padding: 120px; */
 }
 
 * {
@@ -54,11 +49,9 @@ ul {
 .topbar-inner {
   width: 100%;
   padding: 0 40px;
-
   display: flex;
   align-items: center;
   justify-content: space-between;
-
   position: relative;
 }
 
@@ -153,9 +146,7 @@ ul {
   content: "";
   position: absolute;
   inset: 0;
-
   background: linear-gradient(90deg, #173b75 0%, #173b75 45%, #0b1a45 100%);
-
   z-index: -1;
 }
 
@@ -173,7 +164,6 @@ ul {
   height: 100%;
   margin: auto;
   padding: 0 40px;
-
   display: flex;
   align-items: center;
   justify-content: space-between;
