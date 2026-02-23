@@ -1,3 +1,4 @@
+/*Global css*/
 .container {
   width: 90%;
   max-width: 1920px;
@@ -34,42 +35,10 @@
   gap: 20px;
 }
 
-/* Topbar */
-.topbar {
-  background: #00bcd4;
-  color: #fff;
-  padding: 8px 0;
-  font-size: 14px;
-}
 
-.emergency {
-  background: #ff4d4d;
-  padding: 6px 12px;
-  border-radius: 20px;
-}
 
-/* Navbar */
-.navbar-nav .navbar-nav .nav-link.active{
-  color: #fff;
-}
-.navbar {
-  background: #0b1b4a;
-  color: #fff;
-  padding: 15px 0;
-}
 
-.navbar nav a {
-  margin: 0 12px;
-  color: #fff;
-  text-decoration: none;
-}
-
-/*.active {
-  border-bottom: 2px solid #ffffff;
-}*/
-
-/* Hero */
-
+/*Banner Section Start*/
 .about-hero {
   position: relative;
   height: 280px;
