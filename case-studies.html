@@ -26,8 +26,8 @@
     <!-- Main CSS -->
     <link rel="stylesheet" href="css/style.css" />
 
-    <!-- Home CSS -->
-    <link rel="stylesheet" href="css/home.css" />
+    <!-- Case-studies CSS -->
+    <link rel="stylesheet" href="css/case-studies.css" />
   </head>
 
   <body>
@@ -452,12 +452,12 @@
                   </ul>
                 </li>
                 <li>
-                  <a class="dropdown-item" href="make-an-appointment.html">Make An Appoinment</a>
+                  <a class="dropdown-item" href="make-an-appointment.html"
+                    >Make An Appoinment</a
+                  >
                 </li>
                 <li>
-                  <a class="dropdown-item" href="schedule.html"
-                    >Schedule</a
-                  >
+                  <a class="dropdown-item" href="schedule.html">Schedule</a>
                 </li>
               </ul>
             </li>
@@ -541,7 +541,11 @@
                     >Case Studies</a
                   >
                 </li>
-                <li><a class="dropdown-item" href="case-details.html">Case Details</a></li>
+                <li>
+                  <a class="dropdown-item" href="case-details.html"
+                    >Case Details</a
+                  >
+                </li>
               </ul>
             </li>
 
@@ -576,8 +580,16 @@
                 </svg>
               </a>
               <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="blog-standard.html">Blog Standard</a></li>
-                <li><a class="dropdown-item" href="blog-details.html">Blog Details</a></li>
+                <li>
+                  <a class="dropdown-item" href="blog-standard.html"
+                    >Blog Standard</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="blog-details.html"
+                    >Blog Details</a
+                  >
+                </li>
               </ul>
             </li>
 
@@ -719,13 +731,104 @@
     </nav>
     <!--Nav-bar Section End-->
 
- <!--Footer Section Start-->
+    <!--Banner Section Start-->
+    <section class="about-hero">
+      <div class="container about-hero-wrap">
+        <div class="about-hero-left">
+          <h1>Case Studies</h1>
+        </div>
+
+        <div class="about-hero-right">
+          <a href="index.html">Home</a>
+          <span class="sep">
+            <svg
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M9 6C9 6 15 10.4189 15 12C15 13.5812 9 18 9 18"
+                stroke="white"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </span>
+          <span class="title">Case Studies </span>
+        </div>
+      </div>
+    </section>
+     <!--Banner Section End-->
+
+    <!--Filter Section Start-->
+    <section class="filter-section">
+      <div class="container">
+        <div class="filter-wrapper d-flex justify-content-center">
+          <div class="filter-bar">
+            <button class="filter-pill">All</button>
+            <button class="filter-pill">Cardiology</button>
+            <button class="filter-pill">Neurology</button>
+            <button class="filter-pill">Orthopedics</button>
+            <button class="filter-pill">Pathology</button>
+            <button class="filter-pill">Pediatrics</button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--Filter Section End-->
+
+    <!--Gallary Section Start-->
+    <section class="medical-gallery">
+      <div class="gallery-container">
+        <div class="gallery-grid">
+          <div class="gallery-card">
+            <img src="./assesst/cs-1.png" />
+          </div>
+          <div class="gallery-card">
+            <img src="./assesst/cs-2.png" />
+          </div>
+          <div class="gallery-card">
+            <img src="./assesst/cs-3.png" />
+          </div>
+
+          <div class="gallery-card">
+            <img src="./assesst/cs-4.png" />
+          </div>
+          <div class="gallery-card">
+            <img src="./assesst/cs-5.png" />
+          </div>
+          <div class="gallery-card">
+            <img src="./assesst/cs-6.png" />
+          </div>
+
+          <div class="gallery-card">
+            <img src="./assesst/cs-7.png" />
+          </div>
+          <div class="gallery-card">
+            <img src="./assesst/cs-8.png" />
+          </div>
+          <div class="gallery-card">
+            <img src="./assesst/cs-9.png" />
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--Gallary Section End-->
+
+    <!--Footer Section Start-->
     <footer class="footer">
       <div class="footer-container">
         <div class="footer-top">
           <div class="footer-brand">
             <div class="logo">
-              <img src="./images/home-img/logo.png" alt="footer-logo" loading="lazy"/>
+              <img
+                src="./images/home-img/logo.png"
+                alt="footer-logo"
+                loading="lazy"
+              />
             </div>
             <p>
               Maxcare has been offering comprehensive medical services across a
@@ -1045,4 +1148,3 @@
     <!--Java Script End-->
   </body>
 </html>
-
