@@ -202,6 +202,9 @@
   color: #fff;
   border-radius: 20px;
 }
+/*Service Section End*/
+
+/*Department Section Start*/
 
 .dept {
   background: #ffffff;
@@ -287,7 +290,7 @@
 .read-more:hover svg {
   transform: translateX(5px);
 }
-/*Service Section Start*/
+/*Department Section Start*/
 
 /*Booking-step Section Start*/
 
@@ -301,6 +304,7 @@
 
 
 .steps-wrap {
+  width: 100%;
   display: flex;
   justify-content: space-between;
   gap: 48px;
@@ -389,7 +393,7 @@
       #2a6dbb 31%,
       rgba(42, 109, 187, 0.35) 70%
     ),
-    url("../assesst/service-img.png") right center/cover no-repeat;
+    url("../images/our-service-img/appointment-bg.png") center/cover no-repeat;
 
   display: flex;
   align-items: center;
