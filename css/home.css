@@ -1,3 +1,26 @@
+/*Global Declarations*/
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -15px;
+}
+.col-20 {
+  width: 20%;
+  padding: 0 15px;
+}
+.col10 {
+  width: calc(8.33% * 10);
+  padding: 0 15px;
+}
+.col-4 {
+  width: calc(8.33% * 4);
+  padding: 0 15px;
+}
+.col-3 {
+  width: calc(8.33% * 3);
+  padding: 0 15px;
+}
+
 /*Banner Section Start*/
 .hero,
 .about-hero,
@@ -13,7 +36,8 @@
   display: flex;
   align-items: center;
   overflow: hidden;
-  background: url("../images/home-img/Banner_Section.png") right center/cover no-repeat;
+  background: url("../images/home-img/Banner_Section.png") right center/cover
+    no-repeat;
 }
 
 .hero-medical::before {
@@ -30,6 +54,12 @@
     transparent 100%
   );
   z-index: 1;
+}
+.hero-container {
+  max-width: 1650px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 15px;
 }
 
 .hero-medical .container {
@@ -255,7 +285,6 @@
   margin: auto;
 }
 
-
 .about-wrapper {
   display: grid;
   grid-template-columns: 1.05fr 1fr;
@@ -272,7 +301,6 @@
   z-index: 0;
   pointer-events: none;
 }
-
 
 .about-gallery {
   display: flex;
@@ -376,19 +404,16 @@
   transition: 0.25s ease;
 }
 
-/* icon size */
 .play-btn img {
   width: 68px;
   height: 68px;
   object-fit: contain;
 }
 
-/* hover effect */
 .play-btn:hover {
   /* transform: translate(-50%, -50%) scale(1.08); */
   box-shadow: 0 14px 30px rgba(0, 0, 0, 0.25);
 }
-
 
 .about-list {
   list-style: none;
@@ -415,9 +440,6 @@
   height: 18px;
   background: url("../assesst/checkmark-circle-01.png") no-repeat center/contain;
 }
-
-/*ACTIONS ROW*/
-
 .about-actions {
   display: flex;
   align-items: center;
@@ -497,6 +519,7 @@
 }
 .services-intro .container {
   max-width: 1350px;
+  width: 100%;
   margin: auto;
   margin-top: 50px;
 }
@@ -517,24 +540,28 @@
   line-height: 1.3;
   color: #0b1a45;
   margin: 0;
-} 
+}
 .services {
   padding: 10px 0 44px;
   background-color: #dff9ff;
 }
-.service-container{
-    max-width: 1350px;
-    
-
+.dept-container {
+  max-width: 1350px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+.service-container {
+  max-width: 1350px;
 }
 .services-wrap {
   max-width: 1350px;
   margin: auto;
   gap: 10px;
   display: grid;
-  grid-template-columns: repeat(5, 1fr); 
+  grid-template-columns: repeat(5, 1fr);
   border-radius: 22px;
-  overflow: hidden; 
+  overflow: hidden;
 }
 .service-card {
   text-align: center;
@@ -639,6 +666,9 @@
 .read-more:hover svg {
   transform: translateX(5px);
 }
+/*Service Section End*/
+
+/* Stats Section Start */
 
 .stats {
   padding: 260px 0 140px;
@@ -648,15 +678,10 @@
   background: url("../images/home-img/stats-bg.png") center/cover no-repeat;
   z-index: 1;
 }
-/*Service Section Start*/
 
-/* Stats Section Start */
-/* .stats{
-    margin-top: 50px;
-} */
 .stats .container {
-  max-width: 1200px;
-  margin: auto;
+  max-width: 1350px;
+  margin: 0 auto;
   text-align: center;
 }
 .stats-title {
@@ -705,9 +730,9 @@
   font-size: 15px;
   opacity: 0.85;
 }
-/*Stats Section Start*/
+/*Stats Section End*/
 
-/*Team Section Start*/
+/*Our Doctor Section Start*/
 .team {
   background: #f4f7fa;
   padding: 140px 0;
@@ -817,7 +842,7 @@
   border-radius: 20px;
   background: #0b1a45;
 }
-/*Team Section Start*/
+/*Our Doctor Section End*/
 
 /*Media Queries Start*/
 

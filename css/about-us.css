@@ -672,20 +672,16 @@
 }
 /*Our Doctor Section End*/
 
-/*Testimonial Section Start */
+/*Testimonial Section Start*/
 .testimonial {
   background: #f4f7fa;
   padding: 120px 0;
   font-family: "Poppins", sans-serif;
 }
-
 .testimonial-container {
   max-width: 1280px;
   margin: auto;
 }
-
-/*HEADER*/
-
 .testimonial-head {
   display: grid;
   grid-template-columns: 1fr 1.3fr auto;
@@ -693,7 +689,6 @@
   gap: 40px;
   margin-bottom: 90px;
 }
-
 .testimonial-tag {
   border: 1.5px solid #14c6d1;
   color: #14c6d1;
@@ -704,19 +699,16 @@
   display: inline-block;
   margin-bottom: 16px;
 }
-
 .testimonial-title {
   font-size: 38px;
   font-weight: 700;
   color: #0b1a45;
 }
-
 .testimonial-desc {
   color: #6b7b8f;
   font-size: 14px;
   line-height: 1.7;
 }
-
 .rating-box {
   width: 236px;
   background: #14c6d1;
@@ -727,82 +719,56 @@
   flex-direction: column;
   gap: 14px;
 }
-
-/* Average Rating */
 .rating-label {
   font-size: 14px;
   font-weight: 500;
   opacity: 0.95;
 }
-
-/* NUMBER + STARS ROW */
 .rating-row {
   display: flex;
   align-items: center;     
   gap: 14px;               
 }
-
-/* 4.8 */
 .rating-row h3 {
   font-size: 42px;         
   font-weight: 700;
   line-height: 1;
   margin: 0;
 }
-
-
-
-/* Individual star */
 .star {
   width: 20px;
   height: 20px;
   flex-shrink: 0;
 }
-
-
-/*BODY */
-
 .testimonial-body {
   display: grid;
   grid-template-columns: 420px 1fr;
   gap: 70px;
   align-items: center;
 }
-
-/* image */
 .testimonial-image {
   position: relative;
 }
-
 .testimonial-image img {
   width: 100%;
   border-radius: 30px;
   object-fit: cover;
 }
 
-/* quote bubble */
 .quote-icon {
   position: absolute;
   left: -20px;
   bottom: 30px;
-
   width: 150px;
   height: 150px;
-
   background: #14c6d1;
   color: white;
-
   border-radius: 50%;
-
   display: flex;
   align-items: center;
   justify-content: center;
-
   font-size: 32px;
 }
-
-/*TEXT */
-
 .testimonial-text {
   width: 608px;
   height: 104px;
@@ -811,7 +777,6 @@
   line-height: 1.8;
   margin: 18px 0 26px;
 }
-
 .author {
   font-size: 24px;
   font-weight: 600;
@@ -821,21 +786,18 @@
   font-size: 16px;
   color: #00b4d8;
 }
-
-/* STARS */
-
 .stars {
   display: flex;
   gap: 6px;
 }
-
 .star {
   width: 18px;
   height: 18px;
   fill: #14c6d1;
 }
-/*Media Queries*/
+/*Testimonial Section End*/
 
+/*Media Queries*/
 @media  (max-width:1200px){
 
   .about-wrapper{
