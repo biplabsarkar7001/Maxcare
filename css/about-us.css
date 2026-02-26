@@ -8,11 +8,19 @@
   width: calc(8.33% * 10);
   padding: 0 15px;
 }
+.col7{
+  width: calc(8.33% * 7);
+  padding: 0 15px;
+}
 .col6{
   width: calc(8.33% * 6);
   padding: 0 15px;
 }
-.col-3{
+.col5{
+  width: calc(8.33% * 5);
+  padding: 0 15px;
+}
+.col3{
   width: calc(8.33% * 3);
   padding: 0 15px;
 }
@@ -444,7 +452,7 @@
 .choose {
   background: #f4f7fa;
   position: relative;
-  z-index: 3;
+  /* z-index: 3; */
 }
 .choose-wrap {
   max-width: 1280px;
