@@ -332,8 +332,11 @@ ul {
  
 }
 .footer-brand .logo > img {
-  width: 150px;
+ height: 66px;
+  width: auto;
+  margin-bottom: -10px;
 }
+
 .footer-brand span {
   font-size: 22px;
   font-weight: 700;
