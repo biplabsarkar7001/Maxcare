@@ -321,7 +321,7 @@ ul {
 }
 
 .footer .container {
-  max-width: 1280px;
+  max-width: 1350px;
 }
 
 .footer-brand .logo {
@@ -331,9 +331,8 @@ ul {
   margin-bottom: 22px;
  
 }
-.footer-brand .logo >img {
-  height: 100px;
-  width: 225px;
+.footer-brand .logo > img {
+  width: 150px;
 }
 .footer-brand span {
   font-size: 22px;
