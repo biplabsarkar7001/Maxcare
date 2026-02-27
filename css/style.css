@@ -320,20 +320,20 @@ ul {
   font-family: "Inter", sans-serif;
 }
 
-.footer-container {
-  width: 1280px;
-  margin: auto;
+.footer .container {
+  max-width: 1280px;
 }
-.footer-top {
-  display: grid;
-  grid-template-columns: 1.4fr 1fr 1fr 1fr;
-  gap: 60px;
-}
+
 .footer-brand .logo {
   display: flex;
   align-items: center;
-  gap: 14px;
+  /* gap: 14px; */
   margin-bottom: 22px;
+ 
+}
+.footer-brand .logo >img {
+  height: 1000px;
+  width: 225px;
 }
 .footer-brand span {
   font-size: 22px;
@@ -351,6 +351,7 @@ ul {
   color: #cdd6e5;
   margin-bottom: 28px;
 }
+
 .socials {
   display: flex;
   gap: 14px;
@@ -371,7 +372,7 @@ ul {
 .footer-col {
   cursor: pointer;
 }
-.footer-col :hover {
+.footer-col:hover {
   color: #04b5d8;
 }
 .footer-col h4 {
@@ -405,31 +406,28 @@ ul {
 .closed {
   color: #19c6d1;
 }
+
 .footer-contact {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
   border: 1px solid rgba(255, 255, 255, 0.15);
   margin: 60px 0 40px;
 }
-.footer-contact > div {
+.footer-contact .contact-item {
   padding: 30px;
   border-right: 1px solid rgba(255, 255, 255, 0.15);
 }
-.footer-contact > div:last-child {
+.footer-contact .contact-item:last-child {
   border-right: none;
-}
-.footer-contact strong {
-  display: block;
-  font-size: 14px;
-  margin-bottom: 6px;
 }
 .footer-contact span {
   font-size: 18px;
 }
 .footer-contact .foot-num {
-  padding: 48px;
+  padding-left: 0;
   font-size: 30px;
+  display: block;
+  margin-top: 8px;
 }
+
 .footer-bottom {
   display: flex;
   justify-content: space-between;
@@ -446,7 +444,6 @@ ul {
   gap: 30px;
   cursor: pointer;
 }
-
 .footer-bottom a {
   color: #cdd6e5;
   text-decoration: none;
@@ -473,7 +470,6 @@ ul {
   transition: all 0.35s ease;
   z-index: 999;
 }
-
 .scroll-top.show {
   opacity: 1;
   visibility: visible;
@@ -484,16 +480,17 @@ ul {
   color: #ffffff;
   transform: translateY(-3px);
 }
-
 .scroll-top svg {
   width: 22px;
   height: 22px;
 }
+
 /* Footer Section End*/
 
 /*Media Queries*/
 
 @media screen and(max-width: 1200px) {
+  /*Topbar*/
   .topbar-inner {
     padding: 0 25px;
   }
@@ -510,9 +507,16 @@ ul {
   .nav-right {
     display: none;
   }
+  /*Footer Section */
+  .footer .container {
+    max-width: 100%;
+    padding-left: 24px;
+    padding-right: 24px;
+  }
 }
 
 @media screen and(max-width: 992px) {
+  /*Topbar*/
   .topbar-left {
     gap: 15px;
     font-size: 13px;
@@ -532,9 +536,41 @@ ul {
   .topbar-right {
     gap: 12px;
   }
+  /*Footer Section */
+  .footer {
+    padding: 60px 0 30px;
+  }
+
+  .col-brand {
+    flex: 0 0 100%;
+    max-width: 100%;
+    margin-bottom: 36px;
+  }
+
+  .col-service {
+    flex: 0 0 33.3333%;
+    max-width: 33.3333%;
+  }
+
+  .footer-contact .contact-item {
+    border-right: none;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+  }
+  .footer-contact .contact-item:last-child {
+    border-bottom: none;
+  }
+  .footer-bottom {
+    flex-direction: column;
+    gap: 16px;
+    text-align: center;
+  }
+  .footer-bottom .links {
+    justify-content: center;
+  }
 }
 
 @media screen and(max-width: 768px) {
+  /*Topbar*/
   .topbar {
     height: auto;
     padding: 10px 0;
@@ -561,9 +597,23 @@ ul {
   .topbar-right {
     order: 2;
   }
+  /*Footer Section */
+  .col-service {
+    flex: 0 0 50%;
+    max-width: 50%;
+    margin-bottom: 36px;
+  }
+  .footer-contact .col-contact {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+  .footer-contact {
+    margin: 40px 0 30px;
+  }
 }
 
 @media screen and(max-width: 576px) {
+  /*Topbar*/
   .topbar-left {
     flex-direction: column;
     gap: 6px;
@@ -578,9 +628,25 @@ ul {
   .emergency-pill {
     font-size: 12px;
   }
+
+  /*Footer Section */
+  .footer {
+    padding: 48px 0 24px;
+  }
+  .col-service {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+  .footer-contact .contact-item {
+    padding: 20px 16px;
+  }
+  .footer-bottom .links {
+    flex-direction: column;
+  }
 }
 
 @media screen and(max-width: 320px) {
+  /*Topbar*/
   .topbar-inner {
     padding: 0 10px;
   }
@@ -597,5 +663,21 @@ ul {
   .emergency-pill {
     font-size: 11px;
     padding: 0 5px;
+  }
+  /*Footer Section */
+  .footer {
+    padding: 36px 0 20px;
+  }
+  .footer-brand span {
+    font-size: 18px;
+  }
+  .footer-col h4 {
+    font-size: 17px;
+  }
+  .footer-contact .foot-num {
+    font-size: 22px;
+  }
+  .footer-bottom {
+    font-size: 12px;
   }
 }
