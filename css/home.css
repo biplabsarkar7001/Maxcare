@@ -9,112 +9,186 @@
   --white: #ffffff;
   --shadow: 0 20px 50px rgba(10, 35, 80, 0.09);
 } */
+ 
 /*Banner Section Start*/
 .hero,
-.about-hero,
-.hero-medical {
-  position: relative;
-  z-index: 1;
-}
+    .about-hero,
+    .hero-medical {
+      position: relative;
+      z-index: 1;
+    }
 
-.hero-medical {
-  position: relative;
-  height: 100vh;
-  min-height: 900px;
-  display: flex;
-  align-items: center;
-  overflow: hidden;
-  background: url("../images/home-img/Banner_Section.png") right center/cover
-    no-repeat;
-}
+    .hero-medical {
+      position: relative;
+      height: 100vh;
+      min-height: 900px;
+      display: flex;
+      align-items: center;
+      overflow: hidden;
+      background: url("../images/home-img/Banner_Section.png") right center / cover no-repeat;
+    }
 
-.hero-medical::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background: linear-gradient(
-    90deg,
-    #000137 0%,
-    #000137 40%,
-    rgba(0, 1, 55, 0.85) 58%,
-    rgba(0, 1, 55, 0.45) 72%,
-    rgba(0, 1, 55, 0.1) 85%,
-    transparent 100%
-  );
-  z-index: 1;
-}
-.hero-container {
-  max-width: 1650px;
-  width: 100%;
-  margin: 0 auto;
-  padding: 0 15px;
-}
+    .hero-medical::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(
+        90deg,
+        #000137 0%,
+        #000137 40%,
+        rgba(0, 1, 55, 0.85) 58%,
+        rgba(0, 1, 55, 0.45) 72%,
+        rgba(0, 1, 55, 0.1) 85%,
+        transparent 100%
+      );
+      z-index: 1;
+    }
 
-.hero-medical .container {
-  position: relative;
-  z-index: 2;
-  height: 100%;
-  display: flex;
-  align-items: center;
-}
+    /* Override Bootstrap .container to match design (max-width: 1350px) */
+    .hero-medical .container {
+      max-width: 1350px;
+      position: relative;
+      z-index: 2;
+      height: 100%;
+      display: flex;
+      align-items: center;
+    }
 
-.hero-content {
-  color: #ffffff;
-}
+    /* ─── Content ───────────────────────────────────────────── */
+    .hero-content {
+      color: #ffffff;
+    }
 
-.hero-content h1 {
-  font-size: 64px;
-  font-weight: 700;
-  line-height: 1.15;
-  letter-spacing: -0.5px;
-  margin-bottom: 24px;
-}
+    .hero-content h1 {
+      font-size: 64px;
+      font-weight: 700;
+      line-height: 1.15;
+      letter-spacing: -0.5px;
+      margin-bottom: 24px;
+      white-space: nowrap;
+    }
 
-.hero-content p {
-  font-size: 16px;
-  line-height: 1.7;
+    .hero-content p {
+      font-size: 16px;
+      line-height: 1.7;
+      color: rgba(255, 255, 255, 0.85);
+      margin-bottom: 40px;
+    }
 
-  color: rgba(255, 255, 255, 0.85);
+    /* ─── Button ─────────────────────────────────────────────── */
+    .btn-appointment {
+      display: inline-flex;
+      align-items: center;
+      gap: 18px;
+      height: 58px;
+      padding: 6px 6px 6px 26px;
+      background: #ffffff;
+      color: #000137;
+      border-radius: 50px;
+      font-weight: 600;
+      text-decoration: none;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+      position: relative;
+      overflow: hidden;
+      transition:
+        color 0.5s ease,
+        box-shadow 0.4s ease,
+        transform 0.3s ease;
+    }
 
-  margin-bottom: 40px;
-}
+    /* The flowing wave that slides left → right */
+    .btn-appointment::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: -100%;
+      width: 100%;
+      height: 100%;
+      border-radius: 50px;
+      background: linear-gradient(
+        90deg,
+        transparent 0%,
+        rgba(0, 1, 55, 0.28) 20%,
+        rgba(0, 1, 55, 0.52) 50%,
+        rgba(0, 1, 55, 0.28) 80%,
+        transparent 100%
+      );
+      transition: left 0s;
+      z-index: 0;
+    }
 
-.btn-appointment {
-  display: inline-flex;
-  align-items: center;
-  gap: 18px;
-  height: 58px;
-  padding: 6px 6px 6px 26px;
-  background: #ffffff;
-  color: #000137;
-  border-radius: 50px;
-  font-weight: 600;
-  text-decoration: none;
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
-}
+    /* Second wave — delayed, creates a ripple-stream feel */
+    .btn-appointment::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: -100%;
+      width: 100%;
+      height: 100%;
+      border-radius: 50px;
+      background: linear-gradient(
+        90deg,
+        transparent 0%,
+        rgba(0, 1, 55, 0.2) 30%,
+        rgba(0, 1, 55, 0.4) 55%,
+        rgba(0, 1, 55, 0.2) 75%,
+        transparent 100%
+      );
+      transition: left 0s;
+      z-index: 0;
+    }
 
-.btn-appointment:hover {
-  background: #5552e7;
-  color: #ffffff;
-  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
-}
-.btn-icon {
-  width: 46px;
-  height: 46px;
+    .btn-appointment:hover::before {
+      left: 100%;
+      transition: left 0.65s cubic-bezier(0.4, 0, 0.2, 1);
+    }
 
-  background: #000137;
+    .btn-appointment:hover::after {
+      left: 100%;
+      transition: left 0.85s cubic-bezier(0.4, 0, 0.2, 1) 0.1s;
+    }
 
-  border-radius: 50%;
+    .btn-appointment:hover {
+      box-shadow:
+        0 16px 38px rgba(0, 1, 55, 0.15),
+        0 4px 12px rgba(0, 1, 55, 0.08);
+      transform: translateY(-3px);
+      color: #000137;
+      background: #ffffff;
+    }
 
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
+    /* Keep text & icon above pseudo layers */
+    .btn-text,
+    .btn-icon {
+      position: relative;
+      z-index: 1;
+    }
 
-.btn-icon svg {
-  width: 16px;
-  height: 16px;
-}
+    .btn-icon {
+      width: 46px;
+      height: 46px;
+      background: #000137;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+      transition: transform 0.45s cubic-bezier(0.34, 1.56, 0.64, 1);
+    }
+
+    .btn-appointment:hover .btn-icon {
+      transform: translateX(4px);
+    }
+
+    .btn-icon svg {
+      width: 16px;
+      height: 16px;
+      transition: transform 0.4s ease;
+    }
+
+    .btn-appointment:hover .btn-icon svg {
+      transform: translateX(3px);
+    }
 /*Banner Section End*/
 
 /*CTA Section Start*/
@@ -902,14 +976,14 @@
 /*Media Queries Start*/
 
 @media screen and (max-width: 1200px) {
-  /* Banner */
-  .hero-medical {
-    min-height: 750px;
-  }
+  /* Banner Section*/
+ .hero-medical {
+        min-height: 750px;
+      }
 
-  .hero-content h1 {
-    font-size: 52px;
-  }
+      .hero-content h1 {
+        font-size: 52px;
+      }
 
   .hero-content p {
     font-size: 15px;
@@ -981,30 +1055,31 @@
 }
 
 @media screen and (max-width: 992px) {
-  /* Banner */
+  /* Banner Section*/
   .hero-medical {
-    min-height: 650px;
-    background-position: center right;
-  }
+        min-height: 650px;
+        background-position: center center;
+      }
 
-  .hero-content h1 {
-    font-size: 42px;
-  }
+      .hero-medical::before {
+        background: linear-gradient(
+          90deg,
+          #000137 0%,
+          #000137 35%,
+          rgba(0, 1, 55, 0.9) 55%,
+          rgba(0, 1, 55, 0.6) 75%,
+          rgba(0, 1, 55, 0.2) 100%
+        );
+      }
 
-  .hero-content p {
-    font-size: 15px;
-    margin-bottom: 30px;
-  }
+      .hero-content h1 {
+        font-size: 42px;
+        white-space: normal;
+      }
 
-  .btn-appointment {
-    height: 52px;
-    padding: 6px 6px 6px 20px;
-  }
-
-  .btn-icon {
-    width: 40px;
-    height: 40px;
-  }
+      .hero-content p {
+        font-size: 15px;
+      }
 
   /*About Section*/
   .about {
@@ -1106,36 +1181,47 @@
 }
 
 @media screen and (max-width: 768px) {
-  /* Banner */
+  /* Banner Section*/
   .hero-medical {
-    min-height: 600px;
-    text-align: center;
-    background-position: center;
-  }
+        height: auto;
+        min-height: 560px;
+        padding: 100px 0 60px;
+        background-position: 65% center;
+      }
 
-  .hero-medical::before {
-    background: linear-gradient(
-      180deg,
-      #000137 0%,
-      rgba(0, 1, 55, 0.85) 50%,
-      rgba(0, 1, 55, 0.5) 75%,
-      transparent 100%
-    );
-  }
+      .hero-medical::before {
+        background: linear-gradient(
+          180deg,
+          rgba(0, 1, 55, 0.95) 0%,
+          rgba(0, 1, 55, 0.85) 60%,
+          rgba(0, 1, 55, 0.6) 100%
+        );
+      }
 
-  .hero-medical .container {
-    justify-content: center;
-  }
+      .hero-medical .container {
+        align-items: flex-start;
+        padding-top: 40px;
+      }
 
-  .hero-content h1 {
-    font-size: 34px;
-  }
+      .hero-content {
+        text-align: center;
+      }
 
-  .hero-content p {
-    font-size: 14px;
-    margin-left: auto;
-    margin-right: auto;
-  }
+      .hero-content h1 {
+        font-size: 36px;
+        margin-bottom: 16px;
+      }
+
+      .hero-content p {
+        font-size: 15px;
+        margin-bottom: 32px;
+      }
+
+      .btn-appointment {
+        margin: 0 auto;
+      }
+  
+
   /* About Section */
   .about {
     padding: 50px 0;
@@ -1266,37 +1352,36 @@
 }
 
 @media screen and (max-width: 576px) {
-  /*Banner*/
+  /* Banner Section*/
   .hero-medical {
-    min-height: 520px;
-  }
+        min-height: 500px;
+        padding: 80px 0 50px;
+      }
 
-  .hero-content h1 {
-    font-size: 26px;
-    line-height: 1.3;
-  }
+      .hero-content h1 {
+        font-size: 28px;
+        line-height: 1.2;
+        letter-spacing: 0;
+      }
 
-  .hero-content p {
-    font-size: 13px;
-    margin-bottom: 25px;
-  }
+      .hero-content p {
+        font-size: 14px;
+        margin-bottom: 28px;
+      }
 
-  .btn-appointment {
-    height: 48px;
-    padding: 6px 6px 6px 18px;
-    gap: 12px;
-    font-size: 14px;
-  }
+      .btn-appointment {
+        height: 52px;
+        padding: 5px 5px 5px 20px;
+        font-size: 14px;
+        gap: 14px;
+      }
 
-  .btn-icon {
-    width: 36px;
-    height: 36px;
-  }
+      .btn-icon {
+        width: 42px;
+        height: 42px;
+      }
+ 
 
-  .btn-icon svg {
-    width: 14px;
-    height: 14px;
-  }
 
   /* About Section */
 
@@ -1436,34 +1521,36 @@
 }
 
 @media screen and (max-width: 320px) {
-  /* Banner */
+  /* Banner Section*/
   .hero-medical {
-    min-height: 480px;
-  }
+        min-height: 460px;
+        padding: 70px 0 40px;
+      }
 
-  .hero-content h1 {
-    font-size: 22px;
-  }
+      .hero-content h1 {
+        font-size: 22px;
+      }
 
-  .hero-content p {
-    font-size: 12px;
-  }
+      .hero-content p {
+        font-size: 13px;
+      }
 
-  .btn-appointment {
-    height: 44px;
-    padding: 5px 5px 5px 14px;
-    font-size: 13px;
-  }
+      .btn-appointment {
+        height: 46px;
+        padding: 4px 4px 4px 16px;
+        font-size: 13px;
+        gap: 10px;
+      }
 
-  .btn-icon {
-    width: 32px;
-    height: 32px;
-  }
+      .btn-icon {
+        width: 38px;
+        height: 38px;
+      }
 
-  .btn-icon svg {
-    width: 12px;
-    height: 12px;
-  }
+      .btn-icon svg {
+        width: 13px;
+        height: 13px;
+      }
   /* About Section */
   .about {
     padding: 28px 0;
