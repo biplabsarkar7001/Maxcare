@@ -44,7 +44,7 @@
       z-index: 1;
     }
 
-    /* Override Bootstrap .container to match design (max-width: 1350px) */
+    
     .hero-medical .container {
       max-width: 1350px;
       position: relative;
@@ -54,7 +54,7 @@
       align-items: center;
     }
 
-    /* ─── Content ───────────────────────────────────────────── */
+    
     .hero-content {
       color: #ffffff;
     }
@@ -75,7 +75,7 @@
       margin-bottom: 40px;
     }
 
-    /* ─── Button ─────────────────────────────────────────────── */
+    
     .btn-appointment {
       display: inline-flex;
       align-items: center;
@@ -96,7 +96,6 @@
         transform 0.3s ease;
     }
 
-    /* The flowing wave that slides left → right */
     .btn-appointment::before {
       content: "";
       position: absolute;
@@ -117,7 +116,7 @@
       z-index: 0;
     }
 
-    /* Second wave — delayed, creates a ripple-stream feel */
+  
     .btn-appointment::after {
       content: "";
       position: absolute;
@@ -157,7 +156,7 @@
       background: #ffffff;
     }
 
-    /* Keep text & icon above pseudo layers */
+  
     .btn-text,
     .btn-icon {
       position: relative;
@@ -192,153 +191,157 @@
 /*Banner Section End*/
 
 /*CTA Section Start*/
-.cta {
-  padding: 110px 0;
-  background: #f4f7fa;
+.cta { 
+  padding: 80px 0; 
+  background: #f4f7fa; 
 }
-.cta-grid {
-  max-width: 1400px;
-  margin: auto;
+.cta-container { 
+  max-width: 1350px; 
+  width: 100%; 
+  margin: 0 auto; 
+  padding: 0 20px; 
+}
+.cta-grid { 
+  align-items: stretch;
+ }
 
-  display: grid;
-  grid-template-columns: 1.45fr 1fr 1fr;
-  gap: 32px;
-}
-.cta-left,
-.cta-mid,
-.cta-right {
-  height: 450px;
-  border-radius: 28px;
-  overflow: hidden;
-}
-.cta-left {
-  position: relative;
-  color: #fff;
-}
-.cta-left img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-.overlay {
-  position: absolute;
-  inset: 0;
-  background: linear-gradient(
-    90deg,
-    rgba(20, 198, 209, 0.92),
-    rgba(20, 198, 209, 0.7),
-    rgba(20, 198, 209, 0.45)
-  );
-}
-.left-content {
-  position: absolute;
-  top: 55px;
-  left: 55px;
-  max-width: 340px;
-}
-.left-content span {
-  font-size: 12px;
-  letter-spacing: 1px;
-  opacity: 0.9;
-}
-.left-content h2 {
-  font-size: 38px;
-  font-weight: 700;
-  line-height: 1.25;
-  margin-top: 18px;
-}
-.cta-mid {
-  background: #f6f8fb; /* figma grey */
-  padding: 34px 34px;
-  display: flex;
-  flex-direction: column;
+    
+    .cta-col-combined {
+      flex: 0 0 781px;
+      max-width: 781px;
+      width: 781px;
+    }
 
-  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.06); /* softer */
-}
-.mid-head {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+    .cta-combined {
+      display: flex;
+      border-radius: 28px;
+      overflow: hidden;
+      height: 517px;
+    }
 
-  padding-bottom: 14px;
-  border-bottom: 1px solid #e7edf3;
-}
-.mid-head h3 {
-  font-size: 18px;
-  font-weight: 700;
-  color: #0b1a45;
-}
-.mid-head span {
-  color: #14c6d1;
-  font-size: 20px;
-}
-.cta-mid p {
-  font-size: 13.5px;
-  color: #6b7b8f;
-  line-height: 1.6;
-  margin: 18px 0 22px;
-}
-.mid-call {
-  display: flex;
-  gap: 12px;
-  align-items: flex-start;
-  margin-bottom: auto;
-}
-.icon {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.icon svg {
-  width: 17px;
-}
-.mid-call small {
-  color: #6b7b8f;
-  font-size: 12px;
-}
-.mid-call b {
-  display: block;
-  font-size: 14px;
-  color: #0b1a45;
-}
-.cta-right {
-  background: linear-gradient(135deg, #14c6d1, #1299b4);
-  color: #fff;
-  padding: 38px;
-  display: flex;
-  flex-direction: column;
-}
-.cta-right h3 {
-  font-size: 18px;
-  font-weight: 700;
-  margin-bottom: 24px;
-}
-.cta-right ul {
-  list-style: none;
-  padding: 0;
-  margin: 0 0 auto;
-}
-.cta-right li {
-  display: flex;
-  justify-content: space-between;
-  font-size: 13.5px;
-  margin-bottom: 14px;
-}
-.link {
-  font-size: 14px;
-  font-weight: 600;
-  text-decoration: none;
-  color: #0b1a45;
-}
-.link.white {
-  color: #fff;
-}
-.about {
-  position: relative;
-  margin: 120px 0 0;
-  background: #ffffff;
-  overflow: hidden;
-}
+    /* Card 1 – image left half */
+    .cta-combined .cta-left {
+      position: relative;
+      color: #fff;
+      flex: 1 1 0;
+      min-width: 0;
+      height: 100%;
+      background:url(../images/home-img/frame27.png)center/cover no-repeat;
+      /* background: linear-gradient(135deg, #0d7377 0%, #14c6d1 50%, #32e0e0 100%); */
+    }
+    .cta-combined .cta-left .mock-img {
+      position: absolute; inset: 0;
+      background: linear-gradient(120deg, rgba(20,198,209,.15) 0%, rgba(255,255,255,.08) 100%);
+    }
+    .cta-combined .cta-left .mock-img::after {
+      content: '';
+      position: absolute;
+      bottom: 0; right: -10px;
+      width: 220px; height: 85%;
+      background: rgba(255,255,255,.12);
+      border-radius: 110px 110px 0 0;
+    }
+
+    /* Card 2 – white panel 369x487, centred vertically */
+    .cta-combined .cta-mid {
+      flex: 0 0 369px;
+      width: 369px;
+      height: 487px;
+      align-self: center;
+      background: #ffffff;
+      padding: 34px;
+      display: flex;
+      flex-direction: column;
+      box-shadow: -6px 0 28px rgba(0,0,0,.07);
+      border-radius: 0 28px 28px 0;
+    }
+
+    .overlay {
+      position: absolute; inset: 0;
+      background: linear-gradient(90deg, rgba(20,198,209,.92), rgba(20,198,209,.7), rgba(20,198,209,.45));
+    }
+    .left-content { position: absolute; top: 55px; left: 55px; max-width: 260px; z-index: 2; }
+    .left-content span { font-size: 12px; letter-spacing: 1px; opacity: .9; }
+    .left-content h2 { font-size: 34px; font-weight: 700; line-height: 1.25; margin-top: 18px; }
+
+    /* Standalone cards */
+    .cta-visit, .cta-right {
+      height: 517px;
+      border-radius: 28px;
+      overflow: hidden;
+    }
+
+    /* Card 3 */
+    .cta-visit {
+      background: #f6f8fb;
+      padding: 34px;
+      display: flex;
+      flex-direction: column;
+      box-shadow: 0 12px 30px rgba(0,0,0,.06);
+    }
+
+    .mid-head {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding-bottom: 14px;
+      border-bottom: 1px solid #e7edf3;
+    }
+    .mid-head h3 { font-size: 18px; font-weight: 700; color: #0b1a45; }
+    .mid-head .head-icon { color: #14c6d1; font-size: 22px; line-height: 1; }
+    .mid-head .head-icon svg { width: 20px; height: 20px; }
+
+    .cta-combined .cta-mid p, .cta-visit p {
+      font-size: 13.5px; color: #6b7b8f; line-height: 1.6; margin: 18px 0 22px;
+    }
+
+    .mid-call { display: flex; gap: 12px; align-items: flex-start; margin-bottom: auto; }
+    .call-icon {
+      width: 38px; height: 38px;
+      background: #14c6d1;
+      border-radius: 50%;
+      display: flex; align-items: center; justify-content: center; flex-shrink: 0;
+    }
+    .call-icon svg { width: 17px; }
+    .mid-call small { color: #6b7b8f; font-size: 12px; }
+    .mid-call b { display: block; font-size: 14px; color: #0b1a45; }
+
+    .visit-clinic { display: flex; flex-direction: column; gap: 6px; margin-bottom: auto; }
+    .visit-clinic b { font-size: 14px; color: #0b1a45; font-weight: 700; }
+    .visit-clinic small { font-size: 13px; color: #6b7b8f; line-height: 1.5; }
+
+    /* Card 4 */
+    .cta-right {
+      background: linear-gradient(135deg, #14c6d1, #1299b4);
+      color: #fff;
+      padding: 38px;
+      display: flex;
+      flex-direction: column;
+    }
+    .hours-head { border-bottom: 1px solid rgba(255,255,255,.3); }
+    .hours-head h3 { color: #fff; }
+    .hours-head .head-icon { color: #fff; }
+
+    .cta-right ul { list-style: none; padding: 0; margin: 20px 0 auto; }
+    .cta-right li {
+      display: flex;
+      justify-content: space-between;
+      font-size: 13.5px;
+      padding: 8px 0;
+      border-bottom: 1px solid rgba(255,255,255,.15);
+    }
+    .cta-right li:last-child { border-bottom: none; }
+
+    .link {
+      font-size: 14px; font-weight: 600;
+      text-decoration: none;
+      color: #0b1a45;
+      margin-top: 24px;
+      display: inline-block;
+      transition: opacity .2s;
+    }
+    .link:hover { opacity: .7; }
+    .link.white { color: #fff; }
 /*CTA Section Start*/
 
 /*About Section Start*/
