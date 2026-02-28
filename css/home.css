@@ -1,34 +1,14 @@
 /*Global Declarations*/
-.row {
-  display: flex;
-  flex-wrap: wrap;
-  margin: 0 -15px;
-}
-.col-20 {
-  width: 20%;
-  padding: 0 15px;
-}
-.col10 {
-  width: calc(8.33% * 10);
-  padding: 0 15px;
-}
-.col-7 {
-  width: calc(8.33% * 7);
-  padding: 0 15px;
-}
-.col-5 {
-  width: calc(8.33% * 5);
-  padding: 0 15px;
-}
-.col-4 {
-  width: calc(8.33% * 4);
-  padding: 0 15px;
-}
-.col-3 {
-  width: calc(8.33% * 3);
-  padding: 0 15px;
-}
-
+/* :root {
+  --cyan: #14c6d1;
+  --cyan-lt: #e0f8fa;
+  --navy: #000137;
+  --blue: #00194c;
+  --text: #3a4a6b;
+  --border: #c9e8ed;
+  --white: #ffffff;
+  --shadow: 0 20px 50px rgba(10, 35, 80, 0.09);
+} */
 /*Banner Section Start*/
 .hero,
 .about-hero,
@@ -288,192 +268,226 @@
 /*CTA Section Start*/
 
 /*About Section Start*/
-.container {
-  width: 1200px;
-  margin: auto;
-}
-
-.about-wrapper {
-  display: grid;
-  grid-template-columns: 1.05fr 1fr;
-  align-items: center;
+.about {
   position: relative;
-  z-index: 2;
-}
-.about-bg {
-  position: absolute;
-  left: -120px;
-  top: -60px;
-  width: 700px;
-  opacity: 0.35;
-  z-index: 0;
-  pointer-events: none;
+  padding: 80px 0;
+  background: #fff;
+  overflow: hidden;
 }
 
-.about-gallery {
+.about .container {
+  max-width: 1200px;
+}
+
+.dot-bg {
+  position: absolute;
+  left: -20px;
+  top: 0;
+  width: 360px;
+  height: 380px;
+  background-image: radial-gradient(circle, #9dd8e5 1.3px, transparent 1.3px);
+  background-size: 18px 18px;
+  opacity: 0.5;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.gallery-col {
+  position: relative;
+  z-index: 1;
   display: flex;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.gallery-big {
+  flex-shrink: 0;
+  width: 310px;
+  height: 450px;
+  border-radius: 28px;
+  overflow: hidden;
+  box-shadow: 0 28px 64px rgba(0, 30, 80, 0.15);
+}
+
+.gallery-big img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .gallery-stack {
   display: flex;
   flex-direction: column;
-  gap: 32px;
+  gap: 20px;
+  padding-top: 55px;
 }
 
-/* images */
-.gallery-big img,
+.gallery-small {
+  width: 210px;
+  height: 200px;
+  border-radius: 24px;
+  overflow: hidden;
+  box-shadow: 0 16px 42px rgba(0, 30, 80, 0.13);
+}
+
 .gallery-small img {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  border-radius: 24px;
 }
 
-/* exact sizes */
-.gallery-big {
-  width: 360px;
-  height: 480px;
-}
-
-.gallery-small {
-  width: 260px;
-  height: 220px;
+.content-col {
+  position: relative;
+  z-index: 1;
+  padding-left: 8px;
 }
 
 .about-tag {
   display: inline-flex;
   align-items: center;
   gap: 8px;
-  padding: 7px 18px;
-  font-size: 18px;
-  font-weight: 600;
-  letter-spacing: 0.8px;
+  padding: 6px 18px 6px 12px;
+  border: 1.8px solid var(--border);
+  border-radius: 999px;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.9px;
   text-transform: uppercase;
-  color: #00b4d8;
-  border: 2px solid #a6dae5;
-  border-radius: 100px;
-  width: max-content;
+  color: var(--cyan);
+  background: #fff;
+  margin-bottom: 20px;
 }
+
 .about-title {
-  font-size: 43px;
-  margin-bottom: 24px;
-  color: #000137;
+  font-size: 38px;
+  font-weight: 800;
+  line-height: 1.23;
+  color: var(--navy);
+  margin-bottom: 16px;
 }
+
 .about-desc {
-  font-size: 14px;
-  color: #00194c;
+  font-size: 13.5px;
+  line-height: 1.78;
+  color: var(--text);
+  margin-bottom: 0;
+  max-width: 420px;
 }
-
-.about-feature-card {
+.feature-card {
   display: flex;
-  gap: 28px;
   align-items: center;
-  background: #ffffff;
-  padding: 22px;
-  border-radius: 26px;
-  box-shadow: 0 18px 40px rgba(10, 35, 80, 0.08);
-  margin: 28px 0 32px;
+  gap: 22px;
+  background: #fff;
+  border-radius: 22px;
+  padding: 18px 22px;
+  box-shadow: var(--shadow);
+  margin: 26px 0 30px;
 }
 
-.feature-video {
+.video-thumb {
+  flex-shrink: 0;
   position: relative;
-  width: 210px;
-  height: 130px;
+  width: 185px;
+  height: 118px;
   border-radius: 16px;
   overflow: hidden;
 }
 
-.feature-video > img {
+.video-thumb img {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  border-radius: 16px;
 }
 
 .play-btn {
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-
-  width: 54px;
-  height: 54px;
-
-  background: #fff;
-  border-radius: 50%;
-
+  inset: 0;
   display: flex;
   align-items: center;
   justify-content: center;
-
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.18);
-
   cursor: pointer;
-  transition: 0.25s ease;
 }
 
-.play-btn img {
-  width: 68px;
-  height: 68px;
-  object-fit: contain;
+.play-inner {
+  width: 46px;
+  height: 46px;
+  background: #fff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+  transition: transform 0.2s;
 }
 
-.play-btn:hover {
-  /* transform: translate(-50%, -50%) scale(1.08); */
-  box-shadow: 0 14px 30px rgba(0, 0, 0, 0.25);
+.play-btn:hover .play-inner {
+  transform: scale(1.1);
 }
 
-.about-list {
+.check-list {
   list-style: none;
   padding: 0;
+  margin: 0;
 }
 
-.about-list li {
-  position: relative;
-  padding-left: 30px;
-  margin: 12px 0;
-  font-size: 15px;
-  color: #00194c;
+.check-list li {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  font-size: 13.5px;
+  font-weight: 600;
+  color: var(--blue);
+  padding: 5px 0;
 }
-.about-content {
-  margin-bottom: 120px;
-}
-/* SVG icon */
-.about-list li::before {
+
+.check-list li::before {
   content: "";
-  position: absolute;
-  left: 0;
-  top: 5px;
-  width: 18px;
-  height: 18px;
-  background: url("../assesst/checkmark-circle-01.png") no-repeat center/contain;
+  flex-shrink: 0;
+  width: 19px;
+  height: 19px;
+  border-radius: 50%;
+  background: var(--cyan-lt);
+  border: 1.5px solid var(--cyan);
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 12 12'%3E%3Cpath d='M2.5 6l2.5 2.5 4.5-4.5' stroke='%2314c6d1' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round' fill='none'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 12px;
 }
+
 .about-actions {
   display: flex;
   align-items: center;
-  gap: 30px;
+  gap: 28px;
+  flex-wrap: wrap;
 }
 
-.btn-primary {
+.btn-about {
   display: inline-flex;
   align-items: center;
-  gap: 18px;
-  background: #14c6d1;
+  gap: 14px;
+  background: var(--cyan);
   color: #fff;
-  padding: 10px 12px 10px 26px;
-  border-radius: 999px;
-  font-weight: 600;
-  font-size: 15px;
+  font-size: 14px;
+  font-weight: 700;
   text-decoration: none;
-  box-shadow: 0 10px 25px rgba(20, 198, 209, 0.25);
-  transition: 0.25s;
+  padding: 9px 10px 9px 24px;
+  border-radius: 999px;
+  box-shadow: 0 12px 28px rgba(20, 198, 209, 0.3);
+  /* transition:
+    background:0.25s,
+    box-shadow 0.25s;
+  white-space: nowrap; */
 }
-.btn-text {
-  text-transform: capitalize;
+
+.btn-about:hover {
+  background: #0fb3be;
+  color: #fff;
+  box-shadow: 0 16px 36px rgba(20, 198, 209, 0.4);
 }
-.btn-icon {
-  width: 40px;
-  height: 40px;
+
+.btn-circle {
+  width: 38px;
+  height: 38px;
   background: #fff;
   border-radius: 50%;
   display: flex;
@@ -481,41 +495,37 @@
   justify-content: center;
   flex-shrink: 0;
 }
-.btn-icon svg {
-  width: 18px;
-  height: 18px;
-  stroke: #00194c;
-}
-.btn-primary:hover {
-  box-shadow: 0 14px 30px rgba(20, 198, 209, 0.35);
-  background: #0fa9b3;
-}
-.about-emergency {
+
+.emergency {
   display: flex;
   align-items: center;
-  gap: 14px;
+  gap: 12px;
 }
-.phone-circle {
+
+.phone-ring {
   width: 46px;
   height: 46px;
   border-radius: 50%;
-  border: 2px solid #dbe2ea;
+  border: 1.8px solid #dde5f0;
+  background: #fff;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 18px;
-  color: #0b1b4a;
-  background: #fff;
+  flex-shrink: 0;
 }
-.emergency small {
+
+.emerg-text small {
   display: block;
-  font-size: 13px;
-  color: #9aa3b2;
+  font-size: 11.5px;
+  color: #8fa0be;
+  font-weight: 500;
 }
-.emergency strong {
+
+.emerg-text strong {
+  display: block;
   font-size: 17px;
-  color: #0b1b4a;
-  font-weight: 700;
+  font-weight: 800;
+  color: var(--navy);
 }
 /*About Section End*/
 
@@ -688,10 +698,11 @@
 }
 
 .stats .container {
-  max-width: 1350px;
-  margin: 0 auto;
+  max-width: 1922px;
+  margin: auto;
   text-align: center;
 }
+
 .stats-title {
   font-size: 40px;
   font-weight: 600;
@@ -699,14 +710,6 @@
   text-align: center;
   margin: 0 auto 90px;
   max-width: 900px;
-  width: auto;
-  height: auto;
-}
-
-.stats-grid {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  align-items: center;
 }
 
 .stat-item {
@@ -724,6 +727,7 @@
   height: 120px;
   background: rgba(255, 255, 255, 0.2);
 }
+
 .stat-icon {
   width: 44px;
   margin-bottom: 20px;
@@ -734,6 +738,7 @@
   font-weight: 700;
   margin-bottom: 8px;
 }
+
 .stat-item p {
   font-size: 15px;
   opacity: 0.85;
@@ -742,26 +747,30 @@
 
 /*Our Doctor Section Start*/
 .team {
-  background: #f4f7fa;
+  background: #fff;
   padding: 140px 0;
 }
-.team-container {
+
+
+.team .container {
   max-width: 1200px;
-  margin: 0 auto;
   text-align: center;
 }
+
 .team-tag {
-  display: inline-block;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
   padding: 6px 18px;
   border-radius: 30px;
   font-size: 12px;
   font-weight: 600;
   letter-spacing: 0.6px;
-
   color: #14c6d1;
   border: 1.5px solid #14c6d1;
   margin-bottom: 20px;
 }
+
 .team-title {
   font-size: 38px;
   font-weight: 700;
@@ -776,18 +785,27 @@
   line-height: 1.7;
   color: #6b7b8f;
 }
-.team-row {
+
+/* Slider wrapper */
+.team-slider-wrapper {
   position: relative;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 45px;
-  align-items: center;
 }
+
+/* Carousel overrides */
+.team-carousel .carousel-inner {
+  padding-bottom: 10px;
+}
+
+.team-carousel .carousel-item .row {
+  gap: 0; /
+}
+
 .team-card {
   position: relative;
   border-radius: 28px;
   overflow: visible;
 }
+
 .team-card img {
   width: 100%;
   height: 450px;
@@ -795,6 +813,7 @@
   border-radius: 28px;
   box-shadow: 0 15px 40px rgba(0, 0, 0, 0.05);
 }
+
 .team-info {
   position: absolute;
   left: 50%;
@@ -806,45 +825,73 @@
   border-radius: 18px;
   box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
 }
+
 .team-info h4 {
   font-size: 16px;
   font-weight: 700;
   color: #0b1a45;
   margin-bottom: 4px;
 }
+
 .team-info span {
   font-size: 13px;
   color: #6b7b8f;
 }
-.team-next {
+
+/* Next / Prev buttons */
+.team-next,
+.team-prev {
   position: absolute;
-  right: -70px;
   top: 45%;
+  transform: translateY(-50%);
   width: 48px;
   height: 48px;
   border-radius: 50%;
   border: none;
   background: #14c6d1;
   color: #fff;
-  font-size: 26px;
   cursor: pointer;
   box-shadow: 0 10px 25px rgba(20, 198, 209, 0.35);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 10;
+  transition: transform 0.2s;
 }
-.team-next:hover {
-  transform: scale(1.08);
+
+.team-next {
+  right: -70px;
 }
+.team-prev {
+  left: -70px;
+}
+
+.team-next:hover,
+.team-prev:hover {
+  transform: translateY(-50%) scale(1.08);
+}
+
+.team-prev svg {
+  transform: rotate(180deg);
+}
+
 .team-dots {
   margin-top: 80px;
   display: flex;
   justify-content: center;
   gap: 10px;
 }
+
 .team-dots span {
+  display: inline-block;
   width: 13px;
   height: 13px;
   border-radius: 50%;
   background: #cfd8e3;
+  cursor: pointer;
+  transition: all 0.3s;
 }
+
 .team-dots .active {
   width: 40px;
   border-radius: 20px;
@@ -868,32 +915,68 @@
     font-size: 15px;
     max-width: 600px;
   }
+  /*About Section*/
+  .about .container {
+    padding: 0 24px;
+  }
+  .about-title {
+    font-size: 32px;
+  }
+  .gallery-big {
+    width: 268px;
+    height: 400px;
+  }
+  .gallery-small {
+    width: 188px;
+    height: 178px;
+  }
+  .dot-bg {
+    width: 280px;
+  }
+  /*-Service Section*/
 
-  /* STATS */
+  /*Department Part*/
+
+  /*Stats Section*/
   .stats {
-    padding: 220px 0 120px;
+    padding: 200px 0 100px;
   }
 
   .stats-title {
     font-size: 36px;
-    margin-bottom: 70px;
+    margin: 0 auto 70px;
+    max-width: 750px;
   }
 
-  /* TEAM */
+  .stat-item {
+    padding: 0 20px;
+  }
+
+  .stat-item h3 {
+    font-size: 48px;
+  }
+
+  .stat-item p {
+    font-size: 14px;
+  }
+
+  .stat-icon {
+    width: 40px;
+    margin-bottom: 16px;
+  }
+
+  /*Our Doctor Section*/
   .team {
-    padding: 120px 0;
+    padding: 100px 0;
+    }
+  .team-next { 
+    right: -50px; 
+    }
+  .team-prev { 
+    left: -50px; 
   }
-
-  .team-row {
-    gap: 30px;
-  }
-
-  .team-card img {
-    height: 400px;
-  }
-
-  .team-next {
-    right: -50px;
+  .team-card img { 
+    height: 400px; 
   }
 }
 
@@ -923,28 +1006,103 @@
     height: 40px;
   }
 
-  /* STATS */
+  /*About Section*/
+  .about {
+    padding: 60px 0;
+  }
+
+  .gallery-col {
+    justify-content: center;
+    margin-bottom: 44px;
+  }
+
+  .gallery-big {
+    width: 248px;
+    height: 370px;
+  }
+  .gallery-small {
+    width: 174px;
+    height: 162px;
+  }
+  .gallery-stack {
+    padding-top: 42px;
+    gap: 16px;
+  }
+
+  .content-col {
+    padding-left: 0;
+  }
+  .about-title {
+    font-size: 28px;
+  }
+  .dot-bg {
+    width: 230px;
+    height: 230px;
+  }
+   /*-Service Section*/
+
+  /*Department Part*/
+
+  /*Stats Section*/
   .stats {
-    padding: 200px 0 100px;
+    padding: 160px 0 80px;
   }
 
-  .stats-grid {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 60px 0;
+  .stats-title {
+    font-size: 30px;
+    margin: 0 auto 60px;
+    max-width: 620px;
   }
 
-  .stat-item:not(:last-child)::after {
-    display: none;
+  .stat-item {
+    padding: 0 15px;
   }
 
-  /* TEAM */
-  .team-row {
-    grid-template-columns: repeat(2, 1fr);
+  .stat-item::after {
+    height: 90px;
   }
 
-  .team-next {
-    display: none;
+  .stat-item h3 {
+    font-size: 40px;
   }
+
+  .stat-item p {
+    font-size: 13px;
+  }
+
+  .stat-icon {
+    width: 36px;
+    margin-bottom: 14px;
+  }
+
+  /*Our Doctor Section*/
+   .team {
+    padding: 60px 0;
+      }
+      .team-title { 
+        font-size: 28px; 
+      }
+      .team-subtitle {
+        font-size: 14px;
+        margin-bottom: 40px;
+      }
+      .team-card img { 
+        height: 320px; 
+      }
+      .team-next { 
+        right: -10px; 
+      }
+      .team-prev { 
+        left: -10px; 
+      }
+      .team-next,
+      .team-prev {
+        width: 40px;
+        height: 40px;
+      }
+      .team-dots { 
+        margin-top: 40px; 
+      }
 }
 
 @media screen and (max-width: 768px) {
@@ -978,24 +1136,133 @@
     margin-left: auto;
     margin-right: auto;
   }
-  /* STATS */
+  /* About Section */
+  .about {
+    padding: 50px 0;
+  }
+
+  .gallery-col {
+    flex-direction: column;
+    align-items: center;
+    gap: 14px;
+  }
+
+  .gallery-big {
+    width: 100%;
+    max-width: 420px;
+    height: 258px;
+  }
+
+  .gallery-stack {
+    flex-direction: row;
+    padding-top: 0;
+    gap: 14px;
+    width: 100%;
+    max-width: 420px;
+  }
+
+  .gallery-small {
+    flex: 1;
+    width: auto;
+    height: 148px;
+  }
+
+  .about-title {
+    font-size: 24px;
+  }
+
+  .feature-card {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .video-thumb {
+    width: 100%;
+    height: 168px;
+  }
+
+  .dot-bg {
+    width: 180px;
+    height: 180px;
+    opacity: 0.3;
+  }
+   /*Service Section*/
+
+  /*Department Part*/
+
+  /*Stats Section*/
+  .stats {
+    padding: 120px 0 70px;
+  }
+
   .stats-title {
-    font-size: 32px;
-    margin-bottom: 60px;
+    font-size: 26px;
+    margin: 0 auto 50px;
+    max-width: 100%;
+    padding: 0 15px;
+  }
+  .col-3 {
+    flex: 0 0 50%;
+    max-width: 50%;
   }
 
-  /* TEAM */
+  .stat-item {
+    padding: 30px 25px;
+    margin-bottom: 10px;
+  }
+
+  .stat-item:not(:last-child)::after {
+    display: none;
+  }
+
+  .stat-item:nth-child(odd)::after {
+    display: block;
+    height: 100px;
+  }
+
+  .stat-item:nth-child(1),
+  .stat-item:nth-child(2) {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    padding-bottom: 40px;
+  }
+
+  .stat-item:nth-child(3),
+  .stat-item:nth-child(4) {
+    padding-top: 40px;
+  }
+
+  .stat-item h3 {
+    font-size: 44px;
+  }
+
+  .stat-item p {
+    font-size: 14px;
+  }
+
+  .stat-icon {
+    width: 40px;
+    margin-bottom: 16px;
+  }
+
+  /*Our Doctor Section*/
   .team {
-    padding: 100px 0;
-  }
-
-  .team-title {
-    font-size: 32px;
-  }
-
-  .team-subtitle {
-    margin-bottom: 50px;
-  }
+        padding: 60px 0;
+      }
+      .team-title { font-size: 28px; }
+      .team-subtitle {
+        font-size: 14px;
+        margin-bottom: 40px;
+      }
+      .team-card img { height: 320px; }
+      .team-next { right: -10px; }
+      .team-prev { left: -10px; }
+      .team-next,
+      .team-prev {
+        width: 40px;
+        height: 40px;
+      }
+      .team-dots { 
+        margin-top: 40px; 
+      }
 }
 
 @media screen and (max-width: 576px) {
@@ -1031,32 +1298,141 @@
     height: 14px;
   }
 
-  /* STATS */
-  .stats {
-    padding: 160px 0 90px;
+  /* About Section */
+
+  .about {
+    padding: 40px 0;
+  }
+  .about .container {
+    padding: 0 16px;
   }
 
-  .stats-grid {
-    grid-template-columns: 1fr;
-    gap: 50px;
+  .gallery-big {
+    height: 220px;
+  }
+  .gallery-small {
+    height: 118px;
+  }
+  .gallery-stack {
+    gap: 10px;
+  }
+
+  .about-title {
+    font-size: 20px;
+  }
+  .about-tag {
+    font-size: 10.5px;
+    padding: 5px 12px 5px 10px;
+  }
+
+  .feature-card {
+    padding: 14px;
+    border-radius: 18px;
+    gap: 14px;
+  }
+  .video-thumb {
+    height: 150px;
+  }
+
+  .btn-about {
+    font-size: 13px;
+    padding: 8px 8px 8px 18px;
+    gap: 10px;
+  }
+  .btn-circle {
+    width: 34px;
+    height: 34px;
+  }
+
+  .about-actions {
+    gap: 16px;
+  }
+  .emerg-text strong {
+    font-size: 14.5px;
+  }
+  .dot-bg {
+    display: none;
+  }
+   /*Service Section*/
+
+  /*Department Part*/
+
+  /*Stats Section*/
+  .stats {
+    padding: 90px 0 60px;
+  }
+
+  .stats-title {
+    font-size: 22px;
+    margin: 0 auto 40px;
+    line-height: 1.4;
+    padding: 0 20px;
+  }
+
+  .col-3 {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+
+  .stat-item {
+    padding: 25px 30px;
+    margin-bottom: 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  }
+
+  .stat-item:last-child {
+    border-bottom: none;
+  }
+
+  .stat-item:not(:last-child)::after,
+  .stat-item:nth-child(odd)::after {
+    display: none;
+  }
+
+  .stat-item:nth-child(1),
+  .stat-item:nth-child(2) {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    padding-bottom: 25px;
+  }
+
+  .stat-item:nth-child(3),
+  .stat-item:nth-child(4) {
+    padding-top: 25px;
   }
 
   .stat-item h3 {
-    font-size: 48px;
+    font-size: 40px;
   }
 
-  /* TEAM */
-  .team-row {
-    grid-template-columns: 1fr;
+  .stat-item p {
+    font-size: 14px;
   }
 
-  .team-card img {
-    height: 360px;
+  .stat-icon {
+    width: 38px;
+    margin-bottom: 14px;
   }
 
-  .team-info {
-    bottom: 20px;
-  }
+  /*Our Doctor Section*/
+  .team {
+        padding: 50px 0;
+      }
+      .team-title { 
+        font-size: 24px; 
+      }
+      .team-card img {
+         height: 380px; 
+        }
+      .team-next { 
+        right: 0px; 
+      }
+      .team-prev {
+         left: 0px; 
+        }
+      .team-info { 
+        width: 80%; 
+        padding: 14px 16px; 
+      }
 }
 
 @media screen and (max-width: 320px) {
@@ -1088,27 +1464,140 @@
     width: 12px;
     height: 12px;
   }
-  /* STATS */
+  /* About Section */
+  .about {
+    padding: 28px 0;
+  }
+  .about .container {
+    padding: 0 12px;
+  }
+
+  .gallery-big {
+    height: 185px;
+  }
+  .gallery-small {
+    height: 98px;
+  }
+
+  .about-title {
+    font-size: 17px;
+  }
+  .about-desc {
+    font-size: 12px;
+  }
+
+  .feature-card {
+    padding: 12px;
+  }
+  .video-thumb {
+    height: 130px;
+  }
+  .check-list li {
+    font-size: 12px;
+  }
+
+  .about-actions {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 14px;
+  }
+  .btn-about {
+    font-size: 12px;
+  }
+  .emerg-text strong {
+    font-size: 13px;
+  }
+  .phone-ring {
+    width: 38px;
+    height: 38px;
+  }
+   /*Service Section*/
+
+  /*Department Part*/
+
+  /*Stats Section*/
+  .stats {
+    padding: 70px 0 50px;
+  }
+
   .stats-title {
-    font-size: 28px;
+    font-size: 18px;
+    margin: 0 auto 30px;
+    line-height: 1.5;
+    padding: 0 15px;
+  }
+
+  .col-3 {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+
+  .stat-item {
+    padding: 20px 15px;
   }
 
   .stat-item h3 {
-    font-size: 44px;
+    font-size: 34px;
+    margin-bottom: 5px;
   }
 
-  /* TEAM */
-  .team-title {
-    font-size: 28px;
+  .stat-item p {
+    font-size: 13px;
   }
 
-  .team-card img {
-    height: 320px;
+  .stat-icon {
+    width: 32px;
+    margin-bottom: 10px;
   }
 
-  .team-info {
-    padding: 14px;
-  }
+  /*Our Doctor Section*/
+  .team {
+        padding: 40px 0;
+      }
+      .team-title { 
+        font-size: 20px; 
+      }
+      .team-tag { 
+        font-size: 10px;
+       }
+      .team-card img { 
+        height: 300px; 
+      }
+      .team-next { 
+        right: -5px; 
+      }
+      .team-prev { 
+        left: -5px; 
+      }
+      .team-next,
+      .team-prev {
+        width: 34px;
+        height: 34px;
+      }
+      .team-info h4 { 
+        font-size: 14px; 
+      }
+      .team-info span { 
+        font-size: 12px; 
+      }
+      .team-dots { 
+        margin-top: 30px; 
+      }
+      /*Testimonial Section*/
+      .testimonial { 
+        padding: 36px 0; 
+      }
+      .testimonial-title { 
+        font-size: 18px; 
+      }
+      .quote-icon { 
+        display: none; 
+      }
+      .testimonial-text { 
+        font-size: 12px; 
+      }
+
+  
 }
 
 /*Media Queries End*/

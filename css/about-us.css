@@ -129,7 +129,7 @@
   max-width: 1200px;
 }
 
-/* ── Dot-grid BG ─────────────────────────────────── */
+
 .dot-bg {
   position: absolute;
   left: -20px;
@@ -143,7 +143,6 @@
   z-index: 0;
 }
 
-/* ── Gallery ─────────────────────────────────────── */
 .gallery-col {
   position: relative;
   z-index: 1;
@@ -188,14 +187,13 @@
   object-fit: cover;
 }
 
-/* ── Content ─────────────────────────────────────── */
 .content-col {
   position: relative;
   z-index: 1;
   padding-left: 8px;
 }
 
-/* Tag pill */
+
 .about-tag {
   display: inline-flex;
   align-items: center;
@@ -212,7 +210,6 @@
   margin-bottom: 20px;
 }
 
-/* Heading */
 .about-title {
   font-size: 38px;
   font-weight: 800;
@@ -221,7 +218,6 @@
   margin-bottom: 16px;
 }
 
-/* Body text */
 .about-desc {
   font-size: 13.5px;
   line-height: 1.78;
@@ -229,8 +225,6 @@
   margin-bottom: 0;
   max-width: 420px;
 }
-
-/* ── Feature Card ────────────────────────────────── */
 .feature-card {
   display: flex;
   align-items: center;
@@ -282,7 +276,6 @@
   transform: scale(1.1);
 }
 
-/* Checklist */
 .check-list {
   list-style: none;
   padding: 0;
@@ -313,7 +306,6 @@
   background-size: 12px;
 }
 
-/* ── Actions ─────────────────────────────────────── */
 .about-actions {
   display: flex;
   align-items: center;
@@ -575,7 +567,7 @@
   padding: 140px 0;
 }
 
-/* Bootstrap container override: max-width 1350px */
+
 .team .container {
   max-width: 1200px;
   text-align: center;
@@ -833,6 +825,7 @@
 /*Testimonial Section End*/
 
 /*Media Queries*/
+
 @media (max-width: 1200px) {
   /*Banner Section*/
 
@@ -1053,14 +1046,22 @@
   .team {
     padding: 60px 0;
       }
-      .team-title { font-size: 28px; }
+      .team-title { 
+        font-size: 28px; 
+      }
       .team-subtitle {
         font-size: 14px;
         margin-bottom: 40px;
       }
-      .team-card img { height: 320px; }
-      .team-next { right: -10px; }
-      .team-prev { left: -10px; }
+      .team-card img { 
+        height: 320px; 
+      }
+      .team-next { 
+        right: -10px; 
+      }
+      .team-prev { 
+        left: -10px; 
+      }
       .team-next,
       .team-prev {
         width: 40px;
@@ -1177,8 +1178,6 @@
     max-width: 100%;
     padding: 0 15px;
   }
-
-  /* Switch to 2 columns */
   .col-3 {
     flex: 0 0 50%;
     max-width: 50%;
@@ -1189,18 +1188,15 @@
     margin-bottom: 10px;
   }
 
-  /* Remove right border on every 2nd item */
   .stat-item:not(:last-child)::after {
     display: none;
   }
 
-  /* Add right border only on 1st item of each row */
   .stat-item:nth-child(odd)::after {
     display: block;
     height: 100px;
   }
 
-  /* Add bottom border between rows */
   .stat-item:nth-child(1),
   .stat-item:nth-child(2) {
     border-bottom: 1px solid rgba(255, 255, 255, 0.2);
@@ -1386,7 +1382,6 @@
     padding: 0 20px;
   }
 
-  /* Switch to 1 column */
   .col-3 {
     flex: 0 0 100%;
     max-width: 100%;
@@ -1402,13 +1397,11 @@
     border-bottom: none;
   }
 
-  /* Remove all pseudo dividers */
   .stat-item:not(:last-child)::after,
   .stat-item:nth-child(odd)::after {
     display: none;
   }
 
-  /* Remove row borders from 768px */
   .stat-item:nth-child(1),
   .stat-item:nth-child(2) {
     border-bottom: 1px solid rgba(255, 255, 255, 0.2);

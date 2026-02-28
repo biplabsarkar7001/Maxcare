@@ -9,6 +9,16 @@
   --text-dark: #222;
   --text-light: #fff;
 }
+:root {
+  --cyan: #14c6d1;
+  --cyan-lt: #e0f8fa;
+  --navy: #000137;
+  --blue: #00194c;
+  --text: #3a4a6b;
+  --border: #c9e8ed;
+  --white: #ffffff;
+  --shadow: 0 20px 50px rgba(10, 35, 80, 0.09);
+}
 
 * {
   margin: 0;
