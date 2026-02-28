@@ -496,6 +496,9 @@ ul {
   width: 22px;
   height: 22px;
 }
+ .footer-col>ul>li:hover {
+      color: #14c6d1;
+    }
 
 /* Footer Section End*/
 
