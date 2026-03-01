@@ -1109,6 +1109,7 @@
   position: relative;
   overflow: hidden;
   background-image: url('../images/home-img/app-bg.png');
+  background-image: cover;
   display: flex;
   align-items: center;
   justify-content: flex-end;
