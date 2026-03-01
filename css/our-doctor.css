@@ -285,11 +285,9 @@
 /*Appointment Section End*/
 
 /*Media Queries Start*/
-@media (max-width: 1200px) {
-  .about-hero-wrap {
-    padding: 0 40px;
-  }
 
+@media (max-width: 1200px) {
+  /*Doctor Section*/
   .doctor-card {
     width: 100%;
     max-width: 420px;
@@ -304,27 +302,14 @@
     left: 50%;
     transform: translateX(-50%);
   }
+  /*Appointment Section*/
 
   .btn-appointment {
     width: 100%;
   }
 }
 @media (max-width: 992px) {
-  .about-hero {
-    height: auto;
-    padding: 60px 0;
-  }
-
-  .about-hero-wrap {
-    flex-direction: column;
-    text-align: center;
-    gap: 20px;
-  }
-
-  .about-hero-left h1 {
-    font-size: 42px;
-  }
-
+/*Doctor Section*/
   .doctors-grid .row {
     row-gap: 50px;
   }
@@ -336,6 +321,7 @@
   .doctor-card {
     max-width: 380px;
   }
+  /*Appointment Section*/
 
   .section-header h2,
   .appointment-section h2 {
@@ -343,16 +329,7 @@
   }
 }
 @media (max-width: 768px) {
-  .about-hero-left h1 {
-    font-size: 32px;
-  }
-
-  .about-hero-right {
-    font-size: 13px;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-
+ /*Doctor Section*/
   .section-header h2,
   .appointment-section h2 {
     font-size: 28px;
@@ -370,7 +347,7 @@
     width: 90%;
     bottom: 30px;
   }
-
+/*Appointment Section*/
   .form-row-custom {
     flex-direction: column;
     gap: 15px;
