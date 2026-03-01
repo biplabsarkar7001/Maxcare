@@ -1158,11 +1158,10 @@
       color: var(--cyan);
       font-size: 16px;
       font-weight: 700;
-      transition: background 0.4s ease, color 0.4s ease;
+      /* transition: background 0.4s ease, color 0.4s ease; */
       position: relative;
       z-index: 1;
     }
-
 
 /*Book an Appointment Section End*/
 
@@ -1220,17 +1219,17 @@
   }
   /*Service Section*/
   .intro-title {
-        font-size: 36px;
-      }
+    font-size: 36px;
+  }
 
-      .services-wrap {
-        grid-template-columns: repeat(5, 1fr);
-        gap: 6px;
-      }
+  .services-wrap {
+    grid-template-columns: repeat(5, 1fr);
+    gap: 6px;
+  }
 
-      .service-card {
-        padding: 30px 14px;
-      }
+  .service-card {
+    padding: 30px 14px;
+  }
 
   /*Department Part*/
   .dept-container {
@@ -1285,62 +1284,62 @@
   }
   /*Book an Appointment Section*/
   .appt-section {
-      height: auto;
-      min-height: 781px;
-      justify-content: center;
-       padding: 60px 20px;
+    height: auto;
+    min-height: 781px;
+    justify-content: center;
+    padding: 60px 20px;
   }
   .appt-form-col {
-      width: 100%;
-      max-width: 680px;
-      height: auto;
-      margin-right: 0;
-      padding: 44px 36px;
+    width: 100%;
+    max-width: 680px;
+    height: auto;
+    margin-right: 0;
+    padding: 44px 36px;
   }
 }
 
 @media screen and (max-width: 992px) {
   /* Banner Section*/
   .hero-medical {
-        min-height: 650px;
-        background-position: center center;
-      }
+    min-height: 650px;
+    background-position: center center;
+  }
 
-      .hero-medical::before {
-        background: linear-gradient(
-          90deg,
-          #000137 0%,
-          #000137 35%,
-          rgba(0, 1, 55, 0.9) 55%,
-          rgba(0, 1, 55, 0.6) 75%,
-          rgba(0, 1, 55, 0.2) 100%
-        );
-      }
+  .hero-medical::before {
+    background: linear-gradient(
+      90deg,
+      #000137 0%,
+      #000137 35%,
+      rgba(0, 1, 55, 0.9) 55%,
+      rgba(0, 1, 55, 0.6) 75%,
+      rgba(0, 1, 55, 0.2) 100%
+      );
+  }
 
-      .hero-content h1 {
-        font-size: 42px;
-        white-space: normal;
-      }
+  .hero-content h1 {
+    font-size: 42px;
+    white-space: normal;
+  }
 
-      .hero-content p {
-        font-size: 15px;
-      }
+  .hero-content p {
+    font-size: 15px;
+  }
   /*CTA Section*/
   .cta-col-combined { 
     flex: 0 0 100%; 
     max-width: 100%;
      width: 100%; 
     }
-      .cta-combined { 
-        height: 400px; 
-      }
-      .cta-combined .cta-mid { 
-        flex: 0 0 260px; 
-        width: 260px; 
-      }
-      .cta-visit, .cta-right { 
-        height: 400px; 
-      }
+  .cta-combined { 
+    height: 400px; 
+  }
+  .cta-combined .cta-mid { 
+    flex: 0 0 260px; 
+    width: 260px; 
+  }
+  .cta-visit, .cta-right { 
+    height: 400px; 
+  }
 
 
   /*About Section*/
@@ -1378,18 +1377,18 @@
   }
   /*Service Section*/
    .intro-title {
-        font-size: 32px;
-      }
+      font-size: 32px;
+    }
 
-      .services-wrap {
-        grid-template-columns: repeat(3, 1fr);
-        border-radius: 16px;
-      }
+  .services-wrap {
+    grid-template-columns: repeat(3, 1fr);
+    border-radius: 16px;
+  }
 
-      .service-card {
-        padding: 28px 16px;
-        min-height: 180px;
-      }
+  .service-card {
+    padding: 28px 16px;
+    min-height: 180px;
+  }
 
   /*Department Part*/
   .dept-wrapper {
@@ -1434,33 +1433,33 @@
   }
 
   /*Our Doctor Section*/
-   .team {
+  .team {
     padding: 60px 0;
-      }
-      .team-title { 
-        font-size: 28px; 
-      }
-      .team-subtitle {
-        font-size: 14px;
-        margin-bottom: 40px;
-      }
-      .team-card img { 
-        height: 320px; 
-      }
-      .team-next { 
-        right: -10px; 
-      }
-      .team-prev { 
-        left: -10px; 
-      }
-      .team-next,
-      .team-prev {
-        width: 40px;
-        height: 40px;
-      }
-      .team-dots { 
-        margin-top: 40px; 
-      }
+  }
+  .team-title { 
+    font-size: 28px; 
+  }
+  .team-subtitle {
+    font-size: 14px;
+    margin-bottom: 40px;
+  }
+  .team-card img { 
+    height: 320px; 
+  }
+  .team-next { 
+    right: -10px; 
+  }
+  .team-prev { 
+    left: -10px; 
+  }
+  .team-next,
+  .team-prev {
+    width: 40px;
+    height: 40px;
+  }
+  .team-dots { 
+    margin-top: 40px; 
+  }
   /*Book an Appointment Section*/
   .appt-section { 
     min-height: 600px; 
@@ -1478,43 +1477,43 @@
 @media screen and (max-width: 768px) {
   /* Banner Section*/
   .hero-medical {
-        height: auto;
-        min-height: 560px;
-        padding: 100px 0 60px;
-        background-position: 65% center;
-      }
+    height: auto;
+    min-height: 560px;
+    padding: 100px 0 60px;
+    background-position: 65% center;
+  }
 
-      .hero-medical::before {
-        background: linear-gradient(
-          180deg,
-          rgba(0, 1, 55, 0.95) 0%,
-          rgba(0, 1, 55, 0.85) 60%,
-          rgba(0, 1, 55, 0.6) 100%
-        );
-      }
+  .hero-medical::before {
+    background: linear-gradient(
+      180deg,
+      rgba(0, 1, 55, 0.95) 0%,
+      rgba(0, 1, 55, 0.85) 60%,
+      rgba(0, 1, 55, 0.6) 100%
+      );
+  }
 
-      .hero-medical .container {
-        align-items: flex-start;
-        padding-top: 40px;
-      }
+  .hero-medical .container {
+    align-items: flex-start;
+    padding-top: 40px;
+  }
 
-      .hero-content {
-        text-align: center;
-      }
+  .hero-content {
+    text-align: center;
+  }
 
-      .hero-content h1 {
-        font-size: 36px;
-        margin-bottom: 16px;
-      }
+  .hero-content h1 {
+    font-size: 36px;
+    margin-bottom: 16px;
+  }
 
-      .hero-content p {
-        font-size: 15px;
-        margin-bottom: 32px;
-      }
+  .hero-content p {
+    font-size: 15px;
+    margin-bottom: 32px;
+  }
 
-      .btn-appointment {
-        margin: 0 auto;
-      }
+  .btn-appointment {
+    margin: 0 auto;
+  }
   /*CTA Section*/
   .cta-combined { 
     flex-direction: column; 
@@ -1533,10 +1532,9 @@
   .cta-visit, .cta-right { 
     height: auto; 
     min-height: 340px;
-   }
+  }
 
   
-
   /* About Section */
   .about {
     padding: 50px 0;
@@ -1588,30 +1586,30 @@
   }
   /*Service Section*/
   .services-intro {
-        padding: 50px 0 0;
-      }
+    padding: 50px 0 0;
+  }
 
-      .services-intro .container {
-        margin-top: 30px;
-      }
+  .services-intro .container {
+    margin-top: 30px;
+  }
 
-      .intro-title {
-        font-size: 28px;
-      }
+  .intro-title {
+    font-size: 28px;
+  }
 
-      .services-wrap {
-        grid-template-columns: repeat(2, 1fr);
-        border-radius: 14px;
-      }
+  .services-wrap {
+    grid-template-columns: repeat(2, 1fr);
+    border-radius: 14px;
+  }
 
-      .service-card {
-        padding: 24px 14px;
-        min-height: 160px;
-      }
+  .service-card {
+    padding: 24px 14px;
+    min-height: 160px;
+  }
 
-      .service-card h4 {
-        font-size: 15px;
-      }
+  .service-card h4 {
+    font-size: 15px;
+  }
 
   /*Department Part*/
   .dept-wrapper {
@@ -1679,48 +1677,55 @@
 
   /*Our Doctor Section*/
   .team {
-        padding: 60px 0;
-      }
-      .team-title { font-size: 28px; }
-      .team-subtitle {
-        font-size: 14px;
-        margin-bottom: 40px;
-      }
-      .team-card img { height: 320px; }
-      .team-next { right: -10px; }
-      .team-prev { left: -10px; }
-      .team-next,
-      .team-prev {
-        width: 40px;
-        height: 40px;
-      }
-      .team-dots { 
-        margin-top: 40px; 
-      }
-    /*Book an Appointment Section*/
-    .appt-section { 
-      padding: 40px 16px; 
-    }
-    .appt-form-col { 
-      padding: 36px 24px; 
-      border-radius: 24px; 
-    }    
+    padding: 60px 0;
+  }
+  .team-title { 
+    font-size: 28px; 
+  }
+  .team-subtitle {
+    font-size: 14px;
+    margin-bottom: 40px;
+  }
+  .team-card img { 
+    height: 320px; 
+  }
+  .team-next { 
+    right: -10px; 
+  }
+  .team-prev { 
+    left: -10px; 
+  }
+  .team-next, .team-prev {
+    width: 40px;
+    height: 40px;
+  }
+  .team-dots { 
+    margin-top: 40px; 
+  }
+ /*Book an Appointment Section*/
+  .appt-section { 
+    padding: 40px 16px; 
+  }
+  .appt-form-col { 
+    padding: 36px 24px; 
+    border-radius: 24px; 
+  }    
 }
 
 @media screen and (max-width: 576px) {
   /* Banner Section*/
   .hero-medical {
-        min-height: 500px;
-        padding: 80px 0 50px;
-      }
+    min-height: 500px;
+    padding: 80px 0 50px;
+  }
 
-      .hero-content h1 {
-        font-size: 28px;
-        line-height: 1.2;
-        letter-spacing: 0;
-      }
+  .hero-content h1 {
+    font-size: 28px;
+    line-height: 1.2;
+    letter-spacing: 0;
+  }
 
-      .hero-content p {
+  .hero-content p {
         font-size: 14px;
         margin-bottom: 28px;
       }
