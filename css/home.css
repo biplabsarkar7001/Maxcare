@@ -1108,7 +1108,7 @@
   margin: 0 auto;
   position: relative;
   overflow: hidden;
-  background-image: url('../images/home-img/app-bg.png')cover center no-repeat;
+  background-image: url('../images/home-img/app-bg.png');
   display: flex;
   align-items: center;
   justify-content: flex-end;
