@@ -1,0 +1,239 @@
+/*Doctor Schedule Section Start*/
+
+.doctor-schedule-section {
+  background: var(--bg-light);
+  padding: 100px 0;
+}
+.doctor-schedule-section .container {
+  max-width: 1140px;
+  padding: 0 24px;
+}
+.schedule-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 22px;
+  border-radius: 50px;
+  border: 1px solid var(--border-light);
+  background: #fff;
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--primary-color);
+  margin-bottom: 28px;
+  transition: 0.3s ease;
+}
+.schedule-badge:hover {
+  border-color: var(--primary-color);
+  box-shadow: 0 6px 20px rgba(25, 198, 209, 0.15);
+}
+
+.schedule-title {
+  font-size: 38px;
+  font-weight: 600;
+  color: var(--dark-text);
+  margin-bottom: 40px;
+  line-height: 1.25;
+  text-align: center;
+}
+
+.schedule-title span {
+  color: var(--dark-text);
+}
+
+.schedule-filters {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 14px;
+  margin-bottom: 50px;
+}
+
+.filter-pill {
+  padding: 10px 22px;
+  border-radius: 50px;
+  border: none;
+  outline: none;
+  box-shadow: 0 0 0 1.5px var(--border-gray);
+  background: #fff;
+  font-size: 14px;
+  color: var(--gray-text);
+  cursor: pointer;
+  transition:
+    box-shadow 0.25s ease,
+    color 0.25s ease;
+}
+
+.filter-pill:hover,
+.filter-pill.active {
+  background: #fff;
+  color: var(--primary-color);
+  box-shadow:
+    0 0 0 1.5px #00b4d8,
+    0 0 0 3px #ffffff,
+    0 0 0 4.5px #00b4d8;
+}
+
+.schedule-card {
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.06);
+  overflow: hidden;
+}
+.schedule-table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: center;
+}
+.schedule-table thead {
+  background: #f2fbfd;
+}
+.schedule-table th,
+.schedule-table td {
+  padding: 18px 16px;
+  border: 1px solid #edf1f5;
+  font-size: 14px;
+}
+.schedule-table th {
+  font-weight: 600;
+  color: #1a1a1a;
+}
+.schedule-table .doctor-cell {
+  text-align: left;
+  font-weight: 600;
+  color: #000137;
+  background-color: #f2fbfd;
+}
+.schedule-table tbody tr:hover {
+  background: #f9fbfc;
+}
+/*Doctor Schedule Section Start*/
+
+/*Media Queries Start*/
+
+@media (max-width: 1200px) {
+  .doctor-schedule-section {
+    padding: 80px 0;
+  }
+
+  .schedule-title {
+    font-size: 34px;
+  }
+
+  .schedule-table th,
+  .schedule-table td {
+    padding: 14px 12px;
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 992px) {
+  .doctor-schedule-section {
+    padding: 60px 0;
+  }
+
+  .schedule-title {
+    font-size: 30px;
+  }
+
+  .schedule-table th,
+  .schedule-table td {
+    padding: 12px 10px;
+    font-size: 12px;
+  }
+
+  .filter-pill {
+    padding: 8px 16px;
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 768px) {
+  .doctor-schedule-section {
+    padding: 50px 0;
+  }
+
+  .schedule-title {
+    font-size: 26px;
+  }
+
+  .schedule-badge {
+    font-size: 12px;
+    padding: 6px 16px;
+  }
+
+  .schedule-filters {
+    gap: 10px;
+    margin-bottom: 32px;
+  }
+
+  .filter-pill {
+    padding: 7px 14px;
+    font-size: 12px;
+  }
+
+  .schedule-table th,
+  .schedule-table td {
+    padding: 10px 8px;
+    font-size: 11px;
+    white-space: nowrap;
+  }
+}
+
+@media (max-width: 576px) {
+  .doctor-schedule-section {
+    padding: 40px 0;
+  }
+
+  .schedule-title {
+    font-size: 22px;
+  }
+
+  .schedule-filters {
+    gap: 8px;
+    margin-bottom: 24px;
+  }
+
+  .filter-pill {
+    padding: 6px 12px;
+    font-size: 11px;
+  }
+
+  .schedule-card {
+    border-radius: 10px;
+  }
+
+  .schedule-table th,
+  .schedule-table td {
+    padding: 8px 6px;
+    font-size: 10px;
+    white-space: nowrap;
+  }
+}
+
+@media (max-width: 320px) {
+  .doctor-schedule-section {
+    padding: 30px 0;
+  }
+
+  .schedule-title {
+    font-size: 18px;
+  }
+
+  .schedule-badge {
+    font-size: 11px;
+    padding: 5px 12px;
+  }
+
+  .filter-pill {
+    padding: 5px 10px;
+    font-size: 10px;
+  }
+
+  .schedule-table th,
+  .schedule-table td {
+    padding: 6px 4px;
+    font-size: 9px;
+    white-space: nowrap;
+  }
+}
+/*Media Queries End*/
