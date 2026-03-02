@@ -536,7 +536,7 @@ ul {
 
 /*Media Queries*/
 
-@media screen and(max-width: 1200px) {
+@media (max-width: 1200px) {
   /*Topbar*/
   .topbar .container-fluid {
     padding: 0;
@@ -589,7 +589,7 @@ ul {
   }
 }
 
-@media screen and(max-width: 992px) {
+@media (max-width: 992px) {
   /*Topbar*/
   .emergency-pill {
     height: 44px;
@@ -657,7 +657,7 @@ ul {
   }
 }
 
-@media screen and(max-width: 768px) {
+@media (max-width: 768px) {
   /*Topbar*/
   .emergency-pill {
     height: 42px;
@@ -696,7 +696,7 @@ ul {
   }
 }
 
-@media screen and(max-width: 576px) {
+@media (max-width: 576px) {
   /*Topbar*/
   .emergency-pill {
     height: 40px;
@@ -740,7 +740,7 @@ ul {
   }
 }
 
-@media screen and(max-width: 320px) {
+@media (max-width: 320px) {
   /*Topbar*/
   .emergency-pill {
     height: 40px;
