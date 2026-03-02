@@ -1,0 +1,679 @@
+/*Branch Section Start*/
+.branch-section {
+  padding: 100px 0;
+}
+.branch-row {
+  max-width: 1320px;
+  margin: 0 auto;
+  background: #ffffff;
+  border: 1px solid #e5e9f2;
+}
+.branch-col {
+  text-align: center;
+  padding: 0px 0px 60px;
+  position: relative;
+}
+
+.branch-col:not(:last-child) {
+  border-right: 1px solid #e5e9f2;
+}
+
+.branch-col h3 {
+  font-size: 22px;
+  font-weight: 600;
+  color: #0b1030;
+  margin-bottom: 60px;
+  padding: 45px 115px;
+  border-bottom: 1px solid #e5e9f2;
+}
+
+.label {
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  color: #8a97a8;
+  margin-bottom: 10px;
+}
+
+.value {
+  font-size: 18px;
+  font-weight: 600;
+  color: #0b1030;
+  margin-bottom: 45px;
+  line-height: 1.6;
+  transition: 0.3s ease;
+}
+
+.value:hover {
+  color: #19c6d1;
+  cursor: pointer;
+}
+
+.branch-col .value:last-child {
+  margin-bottom: 0;
+}
+/*Branch Section End*/
+
+/*Map Section Start*/
+.map-section {
+  padding: 80px 0;
+  font-family: "Poppins", sans-serif;
+}
+.map-section .container {
+  max-width: 1320px;
+  padding: 0 20px;
+}
+
+.map-container {
+  position: relative;
+  height: 520px;
+  border-radius: 24px;
+  overflow: hidden;
+}
+.map-container iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+  display: block;
+  position: relative;
+  z-index: 1;
+}
+.map-info-card {
+  position: absolute;
+  top: 40px;
+  left: 40px;
+  width: 346px;
+  background: #ffffff;
+  padding: 22px 24px;
+  border-radius: 16px;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.15);
+  z-index: 5;
+}
+.map-info-card h4 {
+  font-size: 18px;
+  font-weight: 700;
+  color: #0b1030;
+  margin-bottom: 8px;
+}
+.map-info-card p {
+  font-size: 13px;
+  color: #6b7b8f;
+  line-height: 1.6;
+  margin-bottom: 12px;
+}
+.map-rating {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 14px;
+}
+.rating-number {
+  font-size: 15px;
+  font-weight: 700;
+  color: #0b1030;
+}
+.stars {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+}
+.reviews {
+  font-size: 12px;
+  color: #00b4d8;
+}
+.map-info-card a {
+  font-size: 13px;
+  color: #00b4d8;
+  text-decoration: none;
+}
+.map-info-card a:hover {
+  text-decoration: underline;
+}
+.schedule-card {
+  position: absolute;
+  right: 60px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 300px;
+  background: #0b1030;
+  padding: 36px 34px;
+  border-radius: 24px;
+  border-right: 2px solid #19c6d1;
+  border-bottom: 2px solid #19c6d1;
+  box-shadow: 0 40px 80px rgba(11, 16, 48, 0.4);
+  z-index: 5;
+  color: #ffffff;
+}
+.schedule-row {
+  display: flex;
+  justify-content: space-between;
+  font-size: 17px;
+  margin-bottom: 22px;
+}
+.schedule-row:last-child {
+  margin-bottom: 0;
+}
+.closed {
+  color: #19c6d1;
+  font-weight: 600;
+}
+/*Map Section End*/
+
+/*Discount Section Start*/
+.offer-section {
+  padding: 120px 0;
+}
+.container-fluid {
+  max-width: 1350px;
+}
+.offer-row {
+  align-items: center;
+}
+
+.offer-left {
+  flex: 0 0 32%;
+  max-width: 32%;
+}
+
+.offer-right {
+  flex: 0 0 68%;
+  max-width: 68%;
+}
+
+.offer-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 18px;
+  border-radius: 30px;
+  border: 1px solid #bfe8ef;
+  background: #ffffff;
+  font-size: 14px;
+  color: #19c6d1;
+  margin-bottom: 25px;
+}
+
+.offer-title {
+  font-size: 32px;
+  font-weight: 700;
+  color: #0b1030;
+  margin-bottom: 15px;
+  line-height: 1.3;
+}
+
+.offer-title span {
+  color: #19c6d1;
+}
+
+.offer-desc {
+  font-size: 14px;
+  color: #6b7c93;
+  line-height: 1.6;
+}
+
+.offer-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.form-row {
+  display: flex;
+  gap: 20px;
+}
+
+.offer-form input,
+.offer-form textarea {
+  width: 100%;
+  padding: 14px 20px;
+  border-radius: 40px;
+  border: 1px solid rgba(25, 198, 209, 0.4);
+  outline: none;
+  font-size: 14px;
+}
+
+.offer-form textarea {
+  height: 120px;
+  border-radius: 20px;
+  resize: none;
+}
+
+.send-btn {
+  position: relative;
+  overflow: hidden;
+  width: 160px;
+  height: 52px;
+  border-radius: 50px;
+  background: linear-gradient(90deg, #19c6d1 0%, #14aeb9 100%);
+  border: none;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: color 0.35s ease;
+  z-index: 0;
+}
+
+.send-btn::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: #ffffff;
+  border-radius: 50px;
+  transition: left 0.35s ease;
+  z-index: -1;
+}
+
+.send-btn:hover::before {
+  left: 0;
+}
+
+.send-btn:hover {
+  color: #19c6d1;
+}
+
+.send-btn::after {
+  content: "";
+  position: absolute;
+  inset: -3px;
+  border-radius: 50px;
+  background: conic-gradient(#19c6d1 0deg, transparent 0deg);
+  -webkit-mask:
+    linear-gradient(#fff 0 0) content-box,
+    linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  padding: 2px;
+  transition: background 0.6s ease;
+}
+
+.send-btn:hover::after {
+  background: conic-gradient(#19c6d1 360deg, transparent 360deg);
+}
+
+/*Discount Section End*/
+
+/*Media Queries Start*/
+
+@media (max-width: 1200px) {
+  /*Branch Section*/
+  .branch-section {
+    padding: 80px 0;
+  }
+
+  .branch-col h3 {
+    padding: 40px 60px;
+    font-size: 20px;
+  }
+
+  .value {
+    font-size: 16px;
+  }
+  /*Map Section*/
+  .map-container {
+    height: 500px;
+  }
+
+  .map-info-card {
+    width: 300px;
+    top: 30px;
+    left: 30px;
+  }
+
+  .schedule-card {
+    right: 30px;
+    width: 270px;
+    padding: 28px 26px;
+  }
+
+  .schedule-row {
+    font-size: 15px;
+    margin-bottom: 18px;
+  }
+  /*Discount Section*/
+  .offer-section {
+    padding: 90px 0;
+  }
+
+  .offer-title {
+    font-size: 28px;
+  }
+}
+
+@media (max-width: 992px) {
+  /*Branch Section*/
+  .branch-section {
+    padding: 60px 0;
+  }
+
+  .branch-col h3 {
+    padding: 36px 40px;
+    font-size: 18px;
+    margin-bottom: 40px;
+  }
+
+  .value {
+    font-size: 15px;
+    margin-bottom: 32px;
+  }
+
+  .label {
+    font-size: 12px;
+  }
+  /*Map Section*/
+  .map-container {
+    height: 460px;
+  }
+
+  .map-info-card {
+    width: 260px;
+    top: 20px;
+    left: 20px;
+    padding: 16px 18px;
+  }
+
+  .map-info-card h4 {
+    font-size: 16px;
+  }
+
+  .schedule-card {
+    right: 20px;
+    width: 240px;
+    padding: 24px 20px;
+  }
+
+  .schedule-row {
+    font-size: 14px;
+    margin-bottom: 16px;
+  }
+  /*Discount Section*/
+  .offer-section {
+    padding: 80px 0;
+  }
+
+  .offer-left,
+  .offer-right {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+
+  .offer-row {
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .offer-title {
+    font-size: 28px;
+  }
+}
+
+@media (max-width: 768px) {
+  /*Branch Section*/
+  .branch-section {
+    padding: 50px 0;
+  }
+
+  .branch-col:not(:last-child) {
+    border-right: none;
+    border-bottom: 1px solid #e5e9f2;
+  }
+
+  .branch-col h3 {
+    padding: 32px 24px;
+    font-size: 18px;
+    margin-bottom: 32px;
+  }
+
+  .branch-col {
+    padding: 0 0 40px;
+  }
+
+  .value {
+    font-size: 16px;
+    margin-bottom: 28px;
+  }
+  /*Map Section*/
+  .map-section {
+    padding: 50px 0;
+  }
+
+  .map-container {
+    height: 560px;
+    border-radius: 16px;
+  }
+
+  .map-info-card {
+    width: calc(100% - 40px);
+    left: 20px;
+    top: 20px;
+    padding: 14px 16px;
+  }
+
+  .map-info-card h4 {
+    font-size: 15px;
+  }
+
+  .map-info-card p {
+    font-size: 12px;
+  }
+
+  .schedule-card {
+    position: absolute;
+    right: 20px;
+    left: 20px;
+    top: auto;
+    bottom: 20px;
+    transform: none;
+    width: calc(100% - 40px);
+    padding: 20px 24px;
+    border-radius: 16px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px 24px;
+  }
+
+  .schedule-row {
+    font-size: 13px;
+    margin-bottom: 0;
+  }
+  /*Discount Section*/
+  .offer-section {
+    padding: 60px 0;
+  }
+
+  .offer-title {
+    font-size: 24px;
+  }
+
+  .form-row {
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .send-btn {
+    width: 100%;
+  }
+}
+
+@media (max-width: 576px) {
+  /*Branch Section*/
+  .branch-section {
+    padding: 40px 0;
+  }
+
+  .branch-col h3 {
+    padding: 28px 20px;
+    font-size: 16px;
+    margin-bottom: 28px;
+  }
+
+  .branch-col {
+    padding: 0 0 32px;
+  }
+
+  .value {
+    font-size: 15px;
+    margin-bottom: 22px;
+  }
+
+  .label {
+    font-size: 12px;
+    letter-spacing: 0.5px;
+  }
+  /*Map Section*/
+  .map-section {
+    padding: 40px 0;
+  }
+
+  .map-container {
+    height: 600px;
+    border-radius: 12px;
+  }
+
+  .map-info-card {
+    width: calc(100% - 32px);
+    left: 16px;
+    top: 16px;
+    padding: 12px 14px;
+  }
+
+  .schedule-card {
+    right: 16px;
+    left: 16px;
+    bottom: 16px;
+    width: calc(100% - 32px);
+    padding: 16px 20px;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 8px 16px;
+  }
+
+  .schedule-row {
+    font-size: 12px;
+  }
+  /*Discount Section*/
+  .offer-section {
+    padding: 50px 0;
+  }
+
+  .offer-title {
+    font-size: 22px;
+  }
+
+  .offer-badge {
+    font-size: 12px;
+    padding: 6px 14px;
+  }
+
+  .offer-form {
+    gap: 14px;
+  }
+
+  .offer-form input,
+  .offer-form textarea {
+    padding: 12px 16px;
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 320px) {
+  /*Branch Section*/
+  .branch-section {
+    padding: 30px 0;
+  }
+
+  .branch-col h3 {
+    padding: 22px 16px;
+    font-size: 15px;
+    margin-bottom: 22px;
+  }
+
+  .branch-col {
+    padding: 0 0 24px;
+  }
+
+  .value {
+    font-size: 13px;
+    margin-bottom: 18px;
+  }
+
+  .label {
+    font-size: 11px;
+    letter-spacing: 0.3px;
+  }
+  /*Map Section*/
+  .map-section {
+    padding: 30px 0;
+  }
+
+  .map-container {
+    height: 580px;
+    border-radius: 10px;
+  }
+
+  .map-info-card {
+    width: calc(100% - 24px);
+    left: 12px;
+    top: 12px;
+    padding: 10px 12px;
+  }
+
+  .map-info-card h4 {
+    font-size: 13px;
+  }
+
+  .map-info-card p {
+    font-size: 11px;
+  }
+
+  .stars svg {
+    width: 16px;
+    height: 16px;
+  }
+
+  .schedule-card {
+    right: 12px;
+    left: 12px;
+    bottom: 12px;
+    width: calc(100% - 24px);
+    padding: 14px 16px;
+    grid-template-columns: 1fr;
+    gap: 6px;
+  }
+
+  .schedule-row {
+    font-size: 12px;
+    margin-bottom: 0;
+  }
+  /*Discount Section*/
+  .offer-section {
+    padding: 36px 0;
+  }
+
+  .offer-title {
+    font-size: 18px;
+  }
+
+  .offer-badge {
+    font-size: 11px;
+    padding: 5px 12px;
+  }
+
+  .offer-desc {
+    font-size: 13px;
+  }
+
+  .offer-form input,
+  .offer-form textarea {
+    padding: 10px 14px;
+    font-size: 12px;
+  }
+
+  .send-btn {
+    font-size: 13px;
+    height: 46px;
+  }
+}
+/*Media Queries End*/
