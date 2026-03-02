@@ -14,12 +14,12 @@
 .faq-img-col::before {
   content: "";
   position: absolute;
-  bottom: 10px;
-  left: -80px;
-  width:800px;
-  height: 800px;
+  bottom: -180px;
+  left: -180px;
+  width: 900px;
+  height: 900px;
   background: #daf1f7;
-  border-radius: 50%;
+  border-radius: 50%;     
   z-index: 0;
 }
 
