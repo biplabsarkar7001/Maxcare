@@ -712,8 +712,8 @@
 
 .services-wrap {
   max-width: 1350px;
-  padding-top: 10px;
-  padding-bottom: 10px;
+  /* padding-top: 10px;
+  padding-bottom: 10px; */
   margin: auto;
   gap: 10px;
   display: grid;
