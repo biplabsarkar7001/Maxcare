@@ -53,7 +53,11 @@ ul {
 }
 .topbar .container-fluid {
   padding: 0 40px;
+  max-width: 1620px;
 }
+/* .container-fluid{
+  max-width: 1950px;
+} */
 
 .info-item {
   display: flex;
@@ -162,7 +166,7 @@ ul {
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 .container-fluid {
-  max-width: 1350px;
+  max-width: 1650px;
 }
 
 .nav-brand img {
