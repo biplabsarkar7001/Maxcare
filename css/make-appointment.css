@@ -1,3 +1,9 @@
+
+/*FAQ Section Start*/
+.container-fluid{
+  max-width: 1950px;
+  overflow: hidden;
+}
 .faq-section {
   padding: 80px 0;
   background: #ffffff;
@@ -14,10 +20,10 @@
 .faq-img-col::before {
   content: "";
   position: absolute;
-  bottom: -180px;
-  left: -180px;
-  width: 900px;
-  height: 900px;
+  bottom: -130px;
+  left: -170px;
+  width: 850px;
+  height: 850px;
   background: #daf1f7;
   border-radius: 50%;     
   z-index: 0;
