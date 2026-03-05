@@ -182,7 +182,7 @@ ul {
   transition: all 0.3s;
   display: flex;
   align-items: center;
-  gap: 5px;
+  margin-right: 20px;
 }
 
 .nav-menu .nav-link:hover,
