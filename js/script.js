@@ -85,7 +85,6 @@ btn.addEventListener("click", () => {
 
       let innerContent = '';
       if (perSlide === 1) {
-        // Single card — no row, no col, just the card full width
         const d = chunk[0];
         innerContent = `
           <div class="team-card">
