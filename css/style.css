@@ -260,7 +260,7 @@ ul {
 
 /* Offcanvas Customization */
 .offcanvas {
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  background: linear-gradient(135deg, #0b2a53 0%, #0b2a53 100%);
 }
 
 .offcanvas-header {
@@ -313,7 +313,7 @@ ul {
 }
 
 .offcanvas .dropdown-item {
-  color: white;
+  background: #00b4d8;
   padding: 10px 16px;
   border-radius: 6px;
   margin: 4px 0;
