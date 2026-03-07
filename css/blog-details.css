@@ -103,7 +103,7 @@
   background: rgba(0, 0, 0, 0.5);
 }
 
-.play-btn {
+/* .play-btn {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -123,7 +123,7 @@
   border-left: 15px solid #000;
   border-top: 10px solid transparent;
   border-bottom: 10px solid transparent;
-}
+} */
 .final-desc {
   font-weight: 800;
   font-size: 18px;
