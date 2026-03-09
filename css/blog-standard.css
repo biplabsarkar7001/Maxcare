@@ -226,7 +226,7 @@
 .tag:hover {
   background: var(--primary);
   border-color: var(--primary);
-  color: #1010c6;
+  color: white;
 }
 
 .main-card {
