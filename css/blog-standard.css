@@ -1,11 +1,11 @@
 /*Global*/
 :root {
-      --primary: #00B4D8;
-      --dark-navy: #00194C;
-      --text-muted: #8a97a8;
-      --text-dark: #4a4a4a;
-      --border: #e5eaf0;
-    }
+  --primary: #00b4d8;
+  --dark-navy: #00194c;
+  --text-muted: #8a97a8;
+  --text-dark: #4a4a4a;
+  --border: #e5eaf0;
+}
 
 /*Blog Standard Section Start*/
 .blog-card {
@@ -76,7 +76,6 @@
   color: #fff;
   border-color: var(--primary);
 }
-
 
 .sidebar-card {
   background: #fff;
@@ -488,4 +487,3 @@
   }
 }
 /*Media Queries End*/
-
